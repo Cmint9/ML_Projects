@@ -17,19 +17,19 @@ Academic Term:
 Machine learning is the study of algorithms that generate models from data.
 --Data Set: 数据集
 -- Sample or Instance: one record 
--- Feature/ Attribute 
--- Feature vector
--- Dimensionality 
--- Training data
--- Training set
+-- Feature/ Attribute 特征向量
+-- Feature vector 特征向量
+-- Dimensionality 维数
+-- Training data 训练数据
+-- Training set 训练集
 --- Training Sample
--- Hypothesis
--- Groud_truth 
--- label 
--- Classification 
--- Regression
--- Positive class
--- Negative class
+-- Hypothesis 假设
+-- Groud_truth 真相
+-- label 标记
+-- Classification 分类 
+-- Regression 回归
+-- Positive class 正类
+-- Negative class 反类
 
 · 
 
