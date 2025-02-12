@@ -1,4 +1,7 @@
-MINST （ Two sets : training set, testing test)
+# MINST （ Two sets : training set, testing test)
 . Object detection (目标检测）
 . Instance Segmentation （语义分割）
 
+# Scenario Understanding: 
+--- Separate different areas and situations into different pictures.
+----- The popular case is driverless, which is planning feasible routes based on recognized scenarios.
