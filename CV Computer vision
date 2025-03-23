@@ -1,4 +1,4 @@
-# MINST （ Two sets : training set, testing test)
+# MINST （ Two sets: training set, testing test)
 . Object detection (目标检测）
 . Instance Segmentation （语义分割）
 
@@ -6,3 +6,11 @@
 --- Separate different areas and situations into different pictures.
 ----- The popular case is driverless, which is planning feasible routes based on recognized scenarios.
 ----- It can be used in health care, hospitals, and security.
+
+* Machine learning methods exploit training data or experience in order to improve performance for prediction or decision tasks. 
+* Computer Vision systems can understand images and videos. ( Building extensive geometric and physical models of cities from video.
+* Natural language processing systems understand written and spoken language: possibilities include automatic translation of text from one language.
+to another, or understanding text on Wikipedia to produce knowledge about the world.
+* Machine listening systems understand audio signals, with applications like speech recognition, acoustic monitoring, or transcribing polyphonic music
+monitoring.
+* Robotics puts AI into practice by designing embodied agents that perceive and interact with the physical world.
