@@ -15,9 +15,9 @@ AI combines sensory Intelligence (image recognition, speech recognition, Gesture
 
 Academic Term:
 Machine learning is the study of algorithms that generate models from data.
---Data Set: 数据集
--- Sample or Instance: one record 
--- Feature/ Attribute 特征向量
+* Data Set: 数据集
+* Sample or Instance: one record 
+* Feature/ Attribute 特征向量
 -- Feature vector 特征向量
 -- Dimensionality 维数
 -- Training data 训练数据
