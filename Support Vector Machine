@@ -1,0 +1,6 @@
+How we understand Support Vectore Machine(SVM)?
+
+When should we learn SVM?
+--- From linear regression model, we can got the SVM mode, but how we choose them?
+1. the rule: m is training data,
+    n >> m , training data is not enough to support training a complicate un-linear model , so we can choose logic regression model.
