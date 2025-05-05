@@ -31,6 +31,10 @@ Machine learning is the study of algorithms that generate models from data.
 * Positive class 正类
 * Negative class 反类
 
+  ## Project1: K-nearest- neighbor
+  ## project2: K-Means
+  
+
 · 
 
 
