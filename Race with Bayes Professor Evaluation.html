@@ -1,0 +1,3694 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="border-box-sizing">
+<div class="container">
+<div>
+
+<h1>xichenzh</h1>
+<table class="grade">
+<tbody>
+<tr class="header">
+<th class="first">Text (50%)</th>
+<th class="next" colspan="4">A</th>
+</tr>
+<tr>
+<td class="first">• Scope</td>
+<td class="selected_grade">Very Good</td>
+<td class="next">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr>
+<td class="first">• Analysis</td>
+<td class="selected_grade">Very Good</td>
+<td class="next">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr>
+<td class="first">• Narrative</td>
+<td class="selected_grade">Very Good</td>
+<td class="next">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr class="header">
+<th class="first">Code (30%)</th>
+<th class="next" colspan="4">A</th>
+</tr>
+<tr>
+<td class="first">• Correctness</td>
+<td class="next">Very Good</td>
+<td class="selected_grade">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr>
+<td class="first">• Completeness</td>
+<td class="selected_grade">Very Good</td>
+<td class="next">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr>
+<td class="first">• Readability</td>
+<td class="selected_grade">Very Good</td>
+<td class="next">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr class="header">
+<th class="first">Presentation (20%)</th>
+<th class="next" colspan="4">A</th>
+</tr>
+<tr>
+<td class="first">• Typesetting</td>
+<td class="selected_grade">Very Good</td>
+<td class="next">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr>
+<td class="first">• Plots</td>
+<td class="selected_grade">Very Good</td>
+<td class="next">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr>
+<td class="first">• Organization</td>
+<td class="selected_grade">Very Good</td>
+<td class="next">Good</td>
+<td class="next">Fair</td>
+<td class="next">Deficient</td>
+</tr>
+<tr class="header">
+<th class="first">Bonus:</th>
+<th class="next" colspan="4">✓</th>
+</tr>
+<tr class="header report-grade">
+<th class="first report-grade-first">Report Grade:</th>
+<th class="next report-grade-next" colspan="4">Comments:</th>
+</tr>
+<tr>
+<td class="first-report-grade">A+</td>
+<td class="next next-report-grade" colspan="4">
+<p>Your report is well written, well organized, and engaging to read. Your methods are well described and well implemented. Your results are well presented and well analyzed.</p><p>Aside from a very small issue in your code, I have no criticism to offer.</p><p>Super Job!</p><p>103/100</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>MTH 448 Project 4<a rel="noopener" class="anchor-link" href="#MTH-448-Project-4">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Race with Bayes<a rel="noopener" class="anchor-link" href="#Race-with-Bayes">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Introduction<a rel="noopener" class="anchor-link" href="#Introduction">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For project four, we need to analyze a data set. This dataset contains 26,000 marathon results. In this project, we will use Bayes&#39; theorem to predict gender based on marathon finish time. Usually, a feature may be a lack of objectivity in our prediction results and vary in accuracy. Therefore, in this project, we can also add other features such as age factor. The accuracy of the final prediction result can be observed through the factors of different variables. Also in this project we will use KNN (K- Nearest Neighbor) to compare the accuracy of the two algorithms. When we start to exlpore the KDE and prediction model, we have to understand what is Bayes&#39; Theorem.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>Methodology<a rel="noopener" class="anchor-link" href="#Methodology">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Bayes&#39; Thorem with KDE:<a rel="noopener" class="anchor-link" href="#Bayes&#39;-Thorem-with-KDE:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Before we start applying Bayes&#39; theorem, we can understand also what is Bayes&#39; theorem. Bayes&#39; Theorem is based on the 18th century English mathematician, Thomas Bayes. The theorem is derived from a mathematical formula used in probability theory for missing conditional probabilities. Conditional probability is the likelihood of predicting that this outcome may occur in a particular situation based on a previous mediator. So in Project4, we will use Bayes&#39; theorem to predict gender from marathon times. This is Bayes&#39; Theorem formula:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>$P$(A|B) is the  is the posterior probability: the probability of  event A occurring given that B is true.</li>
+<li>$P$(B|A) is  is the likelihood: the probability of event B occurring given that A is true.</li>
+<li>$P$(A) is the prior probability of A.</li>
+<li>$P$(B) is the marginal probability of B.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hence, for our project, the Bayes Theorem will be:
+$$
+P(female \mid time) = \frac{P(time \mid female) \cdot P(female)}{P(time)}
+$$</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>First of all, we have to import the Libraries, so that we can get through the csv file.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We should load the .csv file to see the data.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[2]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;marathon_results.csv&#39;</span><span class="p">)</span>  
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[3]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[3]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Age</th>
+<th>M/F</th>
+<th>Country</th>
+<th>5K</th>
+<th>10K</th>
+<th>15K</th>
+<th>20K</th>
+<th>Half</th>
+<th>25K</th>
+<th>30K</th>
+<th>35K</th>
+<th>40K</th>
+<th>Finish</th>
+<th>Pace</th>
+<th>Overall</th>
+<th>Gender</th>
+<th>Division</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>25</td>
+<td>M</td>
+<td>ETH</td>
+<td>00:14:43</td>
+<td>00:29:43</td>
+<td>00:44:57</td>
+<td>01:00:29</td>
+<td>01:04:02</td>
+<td>01:16:07</td>
+<td>01:32:00</td>
+<td>01:47:59</td>
+<td>02:02:39</td>
+<td>02:09:17</td>
+<td>00:04:56</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>30</td>
+<td>M</td>
+<td>ETH</td>
+<td>00:14:43</td>
+<td>00:29:43</td>
+<td>00:44:58</td>
+<td>01:00:28</td>
+<td>01:04:01</td>
+<td>01:16:07</td>
+<td>01:31:59</td>
+<td>01:47:59</td>
+<td>02:02:42</td>
+<td>02:09:48</td>
+<td>00:04:58</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<th>2</th>
+<td>29</td>
+<td>M</td>
+<td>KEN</td>
+<td>00:14:43</td>
+<td>00:29:43</td>
+<td>00:44:57</td>
+<td>01:00:29</td>
+<td>01:04:02</td>
+<td>01:16:07</td>
+<td>01:32:00</td>
+<td>01:47:59</td>
+<td>02:03:01</td>
+<td>02:10:22</td>
+<td>00:04:59</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<th>3</th>
+<td>28</td>
+<td>M</td>
+<td>KEN</td>
+<td>00:14:43</td>
+<td>00:29:44</td>
+<td>00:45:01</td>
+<td>01:00:29</td>
+<td>01:04:02</td>
+<td>01:16:07</td>
+<td>01:32:00</td>
+<td>01:48:03</td>
+<td>02:03:47</td>
+<td>02:10:47</td>
+<td>00:05:00</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<th>4</th>
+<td>32</td>
+<td>M</td>
+<td>KEN</td>
+<td>00:14:43</td>
+<td>00:29:44</td>
+<td>00:44:58</td>
+<td>01:00:28</td>
+<td>01:04:01</td>
+<td>01:16:07</td>
+<td>01:32:00</td>
+<td>01:47:59</td>
+<td>02:03:27</td>
+<td>02:10:49</td>
+<td>00:05:00</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>26293</th>
+<td>64</td>
+<td>F</td>
+<td>USA</td>
+<td>00:50:15</td>
+<td>01:43:31</td>
+<td>02:36:53</td>
+<td>03:32:26</td>
+<td>03:43:46</td>
+<td>04:25:53</td>
+<td>05:19:44</td>
+<td>06:17:19</td>
+<td>07:13:34</td>
+<td>07:38:56</td>
+<td>00:17:31</td>
+<td>26594</td>
+<td>12015</td>
+<td>269</td>
+</tr>
+<tr>
+<th>26294</th>
+<td>61</td>
+<td>F</td>
+<td>USA</td>
+<td>00:48:36</td>
+<td>01:39:39</td>
+<td>02:39:13</td>
+<td>03:35:58</td>
+<td>03:47:55</td>
+<td>04:32:44</td>
+<td>05:31:58</td>
+<td>06:28:56</td>
+<td>07:26:19</td>
+<td>07:51:30</td>
+<td>00:17:59</td>
+<td>26595</td>
+<td>12016</td>
+<td>270</td>
+</tr>
+<tr>
+<th>26295</th>
+<td>66</td>
+<td>F</td>
+<td>USA</td>
+<td>00:53:03</td>
+<td>01:47:16</td>
+<td>02:41:45</td>
+<td>03:37:07</td>
+<td>03:48:21</td>
+<td>04:33:51</td>
+<td>05:38:56</td>
+<td>06:38:51</td>
+<td>07:36:18</td>
+<td>07:59:33</td>
+<td>00:18:18</td>
+<td>26596</td>
+<td>12017</td>
+<td>91</td>
+</tr>
+<tr>
+<th>26296</th>
+<td>53</td>
+<td>M</td>
+<td>USA</td>
+<td>00:49:04</td>
+<td>01:40:12</td>
+<td>02:33:31</td>
+<td>03:31:41</td>
+<td>03:43:35</td>
+<td>04:29:20</td>
+<td>05:31:11</td>
+<td>06:33:35</td>
+<td>07:35:38</td>
+<td>08:00:37</td>
+<td>00:18:20</td>
+<td>26597</td>
+<td>14580</td>
+<td>2055</td>
+</tr>
+<tr>
+<th>26297</th>
+<td>62</td>
+<td>M</td>
+<td>USA</td>
+<td>00:40:14</td>
+<td>01:28:18</td>
+<td>02:26:46</td>
+<td>03:28:41</td>
+<td>03:40:36</td>
+<td>04:36:06</td>
+<td>05:43:44</td>
+<td>06:51:31</td>
+<td>07:41:28</td>
+<td>08:06:01</td>
+<td>00:18:33</td>
+<td>26598</td>
+<td>14581</td>
+<td>898</td>
+</tr>
+</tbody>
+</table>
+<p>26298 rows &#215; 17 columns</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Through this chart, it indicate too much columns. However, we only need some parts of them for the part one.
+Firstly, we can try the data processing, convert to &quot;gender&quot; to binary. &#39;0&#39; mean male and &#39;1&#39; means female.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[4]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[5]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="s1">&#39;M&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span> <span class="c1"># binary change M means male, F means femal</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Because according to our “traing_set&quot; and &quot;testing_set&quot; we can see that our database is very large. And if we want to calculate the 1-Dimension KDE we need to know the end time of the marathon race. But by displaying the data we can see that the finish time is recorded in seconds and minutes. So, for the sake of our calculation. We can generate a separate column named “Time(s)” and calculate it in seconds. This will help us to measure and compare the time better.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[6]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">FinishToTime</span><span class="p">(</span><span class="n">F</span><span class="p">):</span>
+    <span class="n">Flist</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+    <span class="n">secs</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">Flist</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="mi">60</span><span class="o">*</span><span class="nb">int</span><span class="p">(</span><span class="n">Flist</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span> <span class="o">*</span><span class="nb">int</span><span class="p">(</span><span class="n">Flist</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">secs</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[7]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Finish&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">FinishToTime</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[8]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[8]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Age</th>
+<th>M/F</th>
+<th>Country</th>
+<th>5K</th>
+<th>10K</th>
+<th>15K</th>
+<th>20K</th>
+<th>Half</th>
+<th>25K</th>
+<th>30K</th>
+<th>35K</th>
+<th>40K</th>
+<th>Finish</th>
+<th>Pace</th>
+<th>Overall</th>
+<th>Gender</th>
+<th>Division</th>
+<th>Time(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>25</td>
+<td>0</td>
+<td>ETH</td>
+<td>00:14:43</td>
+<td>00:29:43</td>
+<td>00:44:57</td>
+<td>01:00:29</td>
+<td>01:04:02</td>
+<td>01:16:07</td>
+<td>01:32:00</td>
+<td>01:47:59</td>
+<td>02:02:39</td>
+<td>02:09:17</td>
+<td>00:04:56</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>7757</td>
+</tr>
+<tr>
+<th>1</th>
+<td>30</td>
+<td>0</td>
+<td>ETH</td>
+<td>00:14:43</td>
+<td>00:29:43</td>
+<td>00:44:58</td>
+<td>01:00:28</td>
+<td>01:04:01</td>
+<td>01:16:07</td>
+<td>01:31:59</td>
+<td>01:47:59</td>
+<td>02:02:42</td>
+<td>02:09:48</td>
+<td>00:04:58</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>7788</td>
+</tr>
+<tr>
+<th>2</th>
+<td>29</td>
+<td>0</td>
+<td>KEN</td>
+<td>00:14:43</td>
+<td>00:29:43</td>
+<td>00:44:57</td>
+<td>01:00:29</td>
+<td>01:04:02</td>
+<td>01:16:07</td>
+<td>01:32:00</td>
+<td>01:47:59</td>
+<td>02:03:01</td>
+<td>02:10:22</td>
+<td>00:04:59</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>7822</td>
+</tr>
+<tr>
+<th>3</th>
+<td>28</td>
+<td>0</td>
+<td>KEN</td>
+<td>00:14:43</td>
+<td>00:29:44</td>
+<td>00:45:01</td>
+<td>01:00:29</td>
+<td>01:04:02</td>
+<td>01:16:07</td>
+<td>01:32:00</td>
+<td>01:48:03</td>
+<td>02:03:47</td>
+<td>02:10:47</td>
+<td>00:05:00</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>7847</td>
+</tr>
+<tr>
+<th>4</th>
+<td>32</td>
+<td>0</td>
+<td>KEN</td>
+<td>00:14:43</td>
+<td>00:29:44</td>
+<td>00:44:58</td>
+<td>01:00:28</td>
+<td>01:04:01</td>
+<td>01:16:07</td>
+<td>01:32:00</td>
+<td>01:47:59</td>
+<td>02:03:27</td>
+<td>02:10:49</td>
+<td>00:05:00</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>7849</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>26293</th>
+<td>64</td>
+<td>1</td>
+<td>USA</td>
+<td>00:50:15</td>
+<td>01:43:31</td>
+<td>02:36:53</td>
+<td>03:32:26</td>
+<td>03:43:46</td>
+<td>04:25:53</td>
+<td>05:19:44</td>
+<td>06:17:19</td>
+<td>07:13:34</td>
+<td>07:38:56</td>
+<td>00:17:31</td>
+<td>26594</td>
+<td>12015</td>
+<td>269</td>
+<td>27536</td>
+</tr>
+<tr>
+<th>26294</th>
+<td>61</td>
+<td>1</td>
+<td>USA</td>
+<td>00:48:36</td>
+<td>01:39:39</td>
+<td>02:39:13</td>
+<td>03:35:58</td>
+<td>03:47:55</td>
+<td>04:32:44</td>
+<td>05:31:58</td>
+<td>06:28:56</td>
+<td>07:26:19</td>
+<td>07:51:30</td>
+<td>00:17:59</td>
+<td>26595</td>
+<td>12016</td>
+<td>270</td>
+<td>28290</td>
+</tr>
+<tr>
+<th>26295</th>
+<td>66</td>
+<td>1</td>
+<td>USA</td>
+<td>00:53:03</td>
+<td>01:47:16</td>
+<td>02:41:45</td>
+<td>03:37:07</td>
+<td>03:48:21</td>
+<td>04:33:51</td>
+<td>05:38:56</td>
+<td>06:38:51</td>
+<td>07:36:18</td>
+<td>07:59:33</td>
+<td>00:18:18</td>
+<td>26596</td>
+<td>12017</td>
+<td>91</td>
+<td>28773</td>
+</tr>
+<tr>
+<th>26296</th>
+<td>53</td>
+<td>0</td>
+<td>USA</td>
+<td>00:49:04</td>
+<td>01:40:12</td>
+<td>02:33:31</td>
+<td>03:31:41</td>
+<td>03:43:35</td>
+<td>04:29:20</td>
+<td>05:31:11</td>
+<td>06:33:35</td>
+<td>07:35:38</td>
+<td>08:00:37</td>
+<td>00:18:20</td>
+<td>26597</td>
+<td>14580</td>
+<td>2055</td>
+<td>28837</td>
+</tr>
+<tr>
+<th>26297</th>
+<td>62</td>
+<td>0</td>
+<td>USA</td>
+<td>00:40:14</td>
+<td>01:28:18</td>
+<td>02:26:46</td>
+<td>03:28:41</td>
+<td>03:40:36</td>
+<td>04:36:06</td>
+<td>05:43:44</td>
+<td>06:51:31</td>
+<td>07:41:28</td>
+<td>08:06:01</td>
+<td>00:18:33</td>
+<td>26598</td>
+<td>14581</td>
+<td>898</td>
+<td>29161</td>
+</tr>
+</tbody>
+</table>
+<p>26298 rows &#215; 18 columns</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Follow the Bayes Theorem:
+$$
+P(female \mid time) = \frac{P(time \mid female) \cdot P(female)}{P(time)}
+$$
+ We will get $P$(time| female) and $P$(time |male) using KDE.
+ $P$(female) =. proportion of females in training dataset.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>1. Split the Dataset and Compute KDE<a rel="noopener" class="anchor-link" href="#1.-Split-the-Dataset-and-Compute-KDE">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then We need to split the dataset into two different sets, training set and testing set.
+Before we are going to split the data set, we have to understand why we have to split the dataset.</p>
+<ul>
+<li><p>Training set: The training set is used to train the model and estimate the conditional distribution for KDE P(time,age | gender). Hence, we need to train the model,for the Bayesian classifier, we also need to compute the 
+ likelihood and posterior based on the training data. Moreover, because we wanted to predict males and females based on marathon finish time.Thus,we need to calculate prior proabilities P(female) and P(male) by using training model.Finally, we can build a K-NN model by storeing vectors(time and age).</p>
+</li>
+<li><p>Testing Set: Testing set plays an very important role when we want to know the mode is overfitting or underfitting. We also can oberseve the different between Bayesian theorm and K-NN modelBecause according to our “traing_set&quot; and &quot;testing_set&quot; we can see that our database is very large. And if we want to calculate the 1-Dimension KDE we need to know the end time of the marathon race. But by displaying the data we can see that the finish time is recorded in seconds and minutes. So, for the sake of our calculation. We can generate a separate column named “Time(s)” and calculate it in seconds. This will help us to measure and compare the time better.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[9]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Import the &quot;train_test_split&quot; library from scikit-learn model.</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">gaussian_kde</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then split the date into training set and testing set.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[10]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">train_set</span><span class="p">,</span> <span class="n">test_set</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[11]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">train_set</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[11]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Age</th>
+<th>M/F</th>
+<th>Country</th>
+<th>5K</th>
+<th>10K</th>
+<th>15K</th>
+<th>20K</th>
+<th>Half</th>
+<th>25K</th>
+<th>30K</th>
+<th>35K</th>
+<th>40K</th>
+<th>Finish</th>
+<th>Pace</th>
+<th>Overall</th>
+<th>Gender</th>
+<th>Division</th>
+<th>Time(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>25456</th>
+<td>28</td>
+<td>1</td>
+<td>USA</td>
+<td>00:33:25</td>
+<td>01:06:55</td>
+<td>01:40:48</td>
+<td>02:16:47</td>
+<td>02:24:40</td>
+<td>02:56:06</td>
+<td>03:37:36</td>
+<td>04:22:01</td>
+<td>05:04:14</td>
+<td>05:21:56</td>
+<td>00:12:17</td>
+<td>25720</td>
+<td>11516</td>
+<td>5726</td>
+<td>19316</td>
+</tr>
+<tr>
+<th>14983</th>
+<td>36</td>
+<td>1</td>
+<td>USA</td>
+<td>00:26:03</td>
+<td>00:51:36</td>
+<td>01:17:06</td>
+<td>01:43:05</td>
+<td>01:48:39</td>
+<td>02:09:13</td>
+<td>02:36:39</td>
+<td>03:05:01</td>
+<td>03:33:18</td>
+<td>03:45:25</td>
+<td>00:08:36</td>
+<td>15062</td>
+<td>5252</td>
+<td>3468</td>
+<td>13525</td>
+</tr>
+<tr>
+<th>18009</th>
+<td>46</td>
+<td>0</td>
+<td>USA</td>
+<td>00:25:06</td>
+<td>00:49:17</td>
+<td>01:13:55</td>
+<td>01:40:12</td>
+<td>01:45:48</td>
+<td>02:05:27</td>
+<td>02:33:39</td>
+<td>03:05:04</td>
+<td>03:44:09</td>
+<td>03:56:36</td>
+<td>00:09:02</td>
+<td>18135</td>
+<td>10978</td>
+<td>2045</td>
+<td>14196</td>
+</tr>
+<tr>
+<th>22326</th>
+<td>57</td>
+<td>1</td>
+<td>CAN</td>
+<td>00:28:27</td>
+<td>00:56:46</td>
+<td>01:25:39</td>
+<td>01:56:01</td>
+<td>02:02:31</td>
+<td>02:27:08</td>
+<td>03:00:08</td>
+<td>03:35:33</td>
+<td>04:09:32</td>
+<td>04:25:30</td>
+<td>00:10:08</td>
+<td>22522</td>
+<td>9735</td>
+<td>449</td>
+<td>15930</td>
+</tr>
+<tr>
+<th>10114</th>
+<td>59</td>
+<td>0</td>
+<td>USA</td>
+<td>00:24:55</td>
+<td>00:49:23</td>
+<td>01:13:49</td>
+<td>01:38:24</td>
+<td>01:43:44</td>
+<td>02:02:57</td>
+<td>02:28:14</td>
+<td>02:54:10</td>
+<td>03:19:09</td>
+<td>03:30:00</td>
+<td>00:08:01</td>
+<td>10147</td>
+<td>7738</td>
+<td>338</td>
+<td>12600</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>21575</th>
+<td>45</td>
+<td>1</td>
+<td>USA</td>
+<td>00:29:04</td>
+<td>00:57:44</td>
+<td>01:26:39</td>
+<td>01:59:09</td>
+<td>02:05:33</td>
+<td>02:28:48</td>
+<td>03:01:45</td>
+<td>03:34:01</td>
+<td>04:06:02</td>
+<td>04:19:11</td>
+<td>00:09:54</td>
+<td>21760</td>
+<td>9312</td>
+<td>1484</td>
+<td>15551</td>
+</tr>
+<tr>
+<th>5390</th>
+<td>41</td>
+<td>0</td>
+<td>GBR</td>
+<td>00:21:30</td>
+<td>00:42:50</td>
+<td>01:04:37</td>
+<td>01:26:41</td>
+<td>01:31:34</td>
+<td>01:49:31</td>
+<td>02:13:16</td>
+<td>02:37:42</td>
+<td>03:02:37</td>
+<td>03:13:23</td>
+<td>00:07:23</td>
+<td>5403</td>
+<td>4826</td>
+<td>929</td>
+<td>11603</td>
+</tr>
+<tr>
+<th>860</th>
+<td>42</td>
+<td>0</td>
+<td>USA</td>
+<td>00:20:16</td>
+<td>00:39:56</td>
+<td>01:00:02</td>
+<td>01:20:08</td>
+<td>01:24:32</td>
+<td>01:40:10</td>
+<td>02:00:35</td>
+<td>02:20:57</td>
+<td>02:40:53</td>
+<td>02:49:22</td>
+<td>00:06:28</td>
+<td>862</td>
+<td>830</td>
+<td>74</td>
+<td>10162</td>
+</tr>
+<tr>
+<th>15795</th>
+<td>40</td>
+<td>0</td>
+<td>USA</td>
+<td>00:23:11</td>
+<td>00:45:46</td>
+<td>01:08:46</td>
+<td>01:31:56</td>
+<td>01:36:56</td>
+<td>01:55:58</td>
+<td>02:22:00</td>
+<td>02:50:29</td>
+<td>03:26:32</td>
+<td>03:48:26</td>
+<td>00:08:43</td>
+<td>15889</td>
+<td>10103</td>
+<td>1612</td>
+<td>13706</td>
+</tr>
+<tr>
+<th>23654</th>
+<td>46</td>
+<td>1</td>
+<td>USA</td>
+<td>00:28:32</td>
+<td>00:57:21</td>
+<td>01:27:03</td>
+<td>01:57:54</td>
+<td>02:04:37</td>
+<td>02:29:33</td>
+<td>03:01:56</td>
+<td>03:37:47</td>
+<td>04:23:35</td>
+<td>04:41:04</td>
+<td>00:10:44</td>
+<td>23875</td>
+<td>10470</td>
+<td>1662</td>
+<td>16864</td>
+</tr>
+</tbody>
+</table>
+<p>21038 rows &#215; 18 columns</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[12]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">test_set</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[12]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Age</th>
+<th>M/F</th>
+<th>Country</th>
+<th>5K</th>
+<th>10K</th>
+<th>15K</th>
+<th>20K</th>
+<th>Half</th>
+<th>25K</th>
+<th>30K</th>
+<th>35K</th>
+<th>40K</th>
+<th>Finish</th>
+<th>Pace</th>
+<th>Overall</th>
+<th>Gender</th>
+<th>Division</th>
+<th>Time(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>15429</th>
+<td>23</td>
+<td>1</td>
+<td>USA</td>
+<td>00:26:49</td>
+<td>00:51:51</td>
+<td>01:17:36</td>
+<td>01:43:39</td>
+<td>01:49:18</td>
+<td>02:10:09</td>
+<td>02:37:47</td>
+<td>03:06:07</td>
+<td>03:34:44</td>
+<td>03:47:06</td>
+<td>00:08:40</td>
+<td>15515</td>
+<td>5542</td>
+<td>3593</td>
+<td>13626</td>
+</tr>
+<tr>
+<th>14903</th>
+<td>44</td>
+<td>0</td>
+<td>USA</td>
+<td>00:23:34</td>
+<td>00:47:08</td>
+<td>01:10:42</td>
+<td>01:35:27</td>
+<td>01:40:53</td>
+<td>02:01:03</td>
+<td>02:28:22</td>
+<td>02:59:41</td>
+<td>03:31:31</td>
+<td>03:45:09</td>
+<td>00:08:36</td>
+<td>14982</td>
+<td>9780</td>
+<td>1591</td>
+<td>13509</td>
+</tr>
+<tr>
+<th>2973</th>
+<td>42</td>
+<td>0</td>
+<td>USA</td>
+<td>00:21:31</td>
+<td>00:42:29</td>
+<td>01:03:28</td>
+<td>01:24:28</td>
+<td>01:28:57</td>
+<td>01:45:13</td>
+<td>02:07:13</td>
+<td>02:29:28</td>
+<td>02:51:24</td>
+<td>03:01:43</td>
+<td>00:06:56</td>
+<td>2980</td>
+<td>2807</td>
+<td>433</td>
+<td>10903</td>
+</tr>
+<tr>
+<th>15267</th>
+<td>34</td>
+<td>1</td>
+<td>USA</td>
+<td>00:25:46</td>
+<td>00:52:50</td>
+<td>01:19:37</td>
+<td>01:46:32</td>
+<td>01:52:42</td>
+<td>02:14:05</td>
+<td>02:42:31</td>
+<td>03:09:20</td>
+<td>03:35:19</td>
+<td>03:46:29</td>
+<td>00:08:39</td>
+<td>15347</td>
+<td>5436</td>
+<td>3546</td>
+<td>13589</td>
+</tr>
+<tr>
+<th>22153</th>
+<td>51</td>
+<td>1</td>
+<td>USA</td>
+<td>00:29:53</td>
+<td>00:59:05</td>
+<td>01:29:02</td>
+<td>01:59:19</td>
+<td>02:05:58</td>
+<td>02:30:16</td>
+<td>03:03:14</td>
+<td>03:37:03</td>
+<td>04:09:48</td>
+<td>04:24:00</td>
+<td>00:10:05</td>
+<td>22347</td>
+<td>9633</td>
+<td>976</td>
+<td>15840</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>5245</th>
+<td>22</td>
+<td>0</td>
+<td>USA</td>
+<td>00:24:09</td>
+<td>00:45:42</td>
+<td>01:07:28</td>
+<td>01:29:24</td>
+<td>01:34:14</td>
+<td>01:52:00</td>
+<td>02:15:14</td>
+<td>02:38:41</td>
+<td>03:02:56</td>
+<td>03:12:52</td>
+<td>00:07:22</td>
+<td>5258</td>
+<td>4717</td>
+<td>2908</td>
+<td>11572</td>
+</tr>
+<tr>
+<th>11242</th>
+<td>37</td>
+<td>1</td>
+<td>USA</td>
+<td>00:24:15</td>
+<td>00:48:46</td>
+<td>01:13:27</td>
+<td>01:38:10</td>
+<td>01:43:34</td>
+<td>02:03:04</td>
+<td>02:28:38</td>
+<td>02:55:10</td>
+<td>03:21:25</td>
+<td>03:33:32</td>
+<td>00:08:09</td>
+<td>11284</td>
+<td>3032</td>
+<td>2333</td>
+<td>12812</td>
+</tr>
+<tr>
+<th>2814</th>
+<td>57</td>
+<td>0</td>
+<td>USA</td>
+<td>00:21:26</td>
+<td>00:42:19</td>
+<td>01:03:15</td>
+<td>01:24:13</td>
+<td>01:28:50</td>
+<td>01:45:16</td>
+<td>02:06:50</td>
+<td>02:28:58</td>
+<td>02:51:09</td>
+<td>03:00:51</td>
+<td>00:06:54</td>
+<td>2820</td>
+<td>2660</td>
+<td>33</td>
+<td>10851</td>
+</tr>
+<tr>
+<th>12527</th>
+<td>50</td>
+<td>0</td>
+<td>USA</td>
+<td>00:22:43</td>
+<td>00:45:32</td>
+<td>01:09:21</td>
+<td>01:33:04</td>
+<td>01:38:12</td>
+<td>01:57:02</td>
+<td>02:23:46</td>
+<td>02:52:37</td>
+<td>03:23:51</td>
+<td>03:37:28</td>
+<td>00:08:18</td>
+<td>12582</td>
+<td>8797</td>
+<td>1184</td>
+<td>13048</td>
+</tr>
+<tr>
+<th>7277</th>
+<td>50</td>
+<td>0</td>
+<td>USA</td>
+<td>00:22:04</td>
+<td>00:44:56</td>
+<td>01:07:32</td>
+<td>01:30:37</td>
+<td>01:35:42</td>
+<td>01:53:49</td>
+<td>02:18:01</td>
+<td>02:43:09</td>
+<td>03:09:31</td>
+<td>03:21:10</td>
+<td>00:07:41</td>
+<td>7293</td>
+<td>6120</td>
+<td>478</td>
+<td>12070</td>
+</tr>
+</tbody>
+</table>
+<p>5260 rows &#215; 18 columns</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[276]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data preparation complete.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Training samples: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">train_set</span><span class="p">)</span><span class="si">}</span><span class="s2">, Test samples: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">test_set</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Data preparation complete.
+Training samples: 21038, Test samples: 5260
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After we split into two different data sets, we can extraxt the time from two genders: male and female.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>2. Know about Guassian KDE<a rel="noopener" class="anchor-link" href="#2.-Know-about-Guassian-KDE">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Before we apply KDE to estimate for 1Dimension KDE,we have to try to understand why we should use KDE here.
+KDE(Gaussian Kernel Density Estimation), Gaussian KDE is a non-parametric method to estimate the probaility density 
+function(PDF) of a random varibale.</p>
+<ul>
+<li>What is &quot;Non parametric&quot;? It means we do not have to assume a specific distribution, for example, normal distribution, exponential distribution.</li>
+<li>Why we use KDE? We want to estimate $P$(time|gender) and help Bayes&#39; Theorem to make probabilitic predictions for the gender.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>2.1 Compute 1-D KDE Bayesian<a rel="noopener" class="anchor-link" href="#2.1-Compute-1-D-KDE-Bayesian">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We using 1 dimension KDE on finish time to estimate $P$(time|female).
+Then we will use Bayes&#39; Theorem to compute accuracy. After that, we can predict the gender for marathon and compute the accuracy. So we can follow the Bayes&#39; Theorem to write the code.
+$$
+P(female \mid time) = \frac{P(time \mid female) \cdot P(female)}{P(time)}
+$$</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[277]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">MakeKDEs</span><span class="p">(</span><span class="n">bandwidth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">train_set</span><span class="o">=</span><span class="n">train_set</span><span class="p">):</span>
+    <span class="n">female_times</span> <span class="o">=</span> <span class="n">train_set</span><span class="p">[</span><span class="n">train_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    <span class="n">all_times</span> <span class="o">=</span> <span class="n">train_set</span><span class="p">[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    
+    
+    <span class="c1"># Create KDE models with proper bandwidth handling</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">kde_female</span> <span class="o">=</span> <span class="n">gaussian_kde</span><span class="p">(</span><span class="n">female_times</span><span class="p">,</span> <span class="n">bw_method</span><span class="o">=</span><span class="n">bandwidth</span><span class="p">)</span>
+        <span class="n">kde_all</span> <span class="o">=</span> <span class="n">gaussian_kde</span><span class="p">(</span><span class="n">all_times</span><span class="p">,</span> <span class="n">bw_method</span><span class="o">=</span><span class="n">bandwidth</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;KDE creation failed: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">kde_female</span><span class="p">,</span><span class="n">kde_all</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[278]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">kde_f</span><span class="p">,</span><span class="n">kde_all</span> <span class="o">=</span> <span class="n">MakeKDEs</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then, create the function named &quot;bayes_1d_classifier &quot; with the one feature &quot;Time(s)&quot;.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[279]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function for 1 dimension</span>
+<span class="k">def</span> <span class="nf">bayes_1d_classifier</span><span class="p">(</span><span class="n">time</span><span class="p">,</span><span class="n">kde_female</span><span class="o">=</span><span class="n">kde_f</span><span class="p">,</span><span class="n">kde_all</span><span class="o">=</span><span class="n">kde_all</span><span class="p">):</span>
+    <span class="c1"># Separate female and male </span>
+    <span class="n">female_times</span> <span class="o">=</span> <span class="n">train_set</span><span class="p">[</span><span class="n">train_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    <span class="n">all_times</span> <span class="o">=</span> <span class="n">train_set</span><span class="p">[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    
+    <span class="c1"># Then we can follow the equation to calcuate </span>
+    <span class="n">p_female</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">female_times</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_times</span><span class="p">)</span>
+    <span class="n">p_time</span> <span class="o">=</span> <span class="n">kde_all</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+    <span class="n">PtimeFem</span> <span class="o">=</span> <span class="n">kde_female</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+    <span class="n">p_F_result</span> <span class="o">=</span> <span class="p">(</span><span class="n">PtimeFem</span><span class="o">*</span><span class="n">p_female</span><span class="p">)</span><span class="o">/</span><span class="n">p_time</span>
+    <span class="c1"># We will check p_F_result proability, The &quot;True&quot; value for female, and &quot;False&quot; value for male.</span>
+    <span class="k">return</span> <span class="n">p_F_result</span><span class="o">&gt;</span><span class="mf">0.5</span>
+    
+    
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Use one case to show which gender will coming out. For the value, if the Proabiliy higher than 50%, it will be female and return value should be &quot;True&quot;.
+On the other hand, the proability less than 50%, it will return value &quot;False&quot;, means male.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[280]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">bayes_1d_classifier</span><span class="p">([</span><span class="mi">27000</span><span class="p">])</span>  <span class="c1"># Try to use one test case</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[280]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ True])</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[281]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">TestClassifier</span><span class="p">(</span><span class="n">test_set</span><span class="o">=</span><span class="n">test_set</span><span class="p">,</span><span class="n">kde_female</span><span class="o">=</span><span class="n">kde_f</span><span class="p">,</span><span class="n">kde_all</span><span class="o">=</span><span class="n">kde_all</span><span class="p">):</span>
+    <span class="n">test_true</span> <span class="o">=</span> <span class="n">test_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    <span class="n">predMF</span> <span class="o">=</span> <span class="n">bayes_1d_classifier</span><span class="p">(</span><span class="n">test_set</span><span class="p">[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">],</span><span class="n">kde_female</span><span class="o">=</span><span class="n">kde_female</span><span class="p">,</span><span class="n">kde_all</span><span class="o">=</span><span class="n">kde_all</span><span class="p">)</span>
+    <span class="n">numcorrect</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">predMF</span><span class="o">==</span><span class="n">test_true</span><span class="p">)</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">numcorrect</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">test_true</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">accuracy</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[282]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">TestClassifier</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[282]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>0.6534220532319391</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After we got the result from &quot;TestClassifier&quot;, we can estimate the accuracy about &quot;0.65&quot;. Then, we need create one more function named &quot;evaluate_1d_classifier&quot; with two
+paramters to evaluaye 1-dimensional classifier with different bandwidths.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[283]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">evaluate_1d_classifier</span><span class="p">(</span><span class="n">train_set</span><span class="p">,</span> <span class="n">test_set</span><span class="p">):</span>
+    
+    <span class="n">bandwidths</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;scott&#39;</span><span class="p">,</span> <span class="s1">&#39;silverman&#39;</span><span class="p">]</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">bw</span> <span class="ow">in</span> <span class="n">bandwidths</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">preds</span> <span class="o">=</span> <span class="n">bayes_1d_classifier</span><span class="p">(</span><span class="n">train_set</span><span class="p">,</span> <span class="n">test_set</span><span class="p">,</span> <span class="n">bw</span><span class="p">)</span>
+            <span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">],</span> <span class="n">preds</span><span class="p">)</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">bw</span><span class="p">,</span> <span class="n">acc</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bandwidth </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">bw</span><span class="p">)</span><span class="si">:</span><span class="s2">&lt;9</span><span class="si">}</span><span class="s2">: Accuracy = </span><span class="si">{</span><span class="n">acc</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bandwidth </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">bw</span><span class="p">)</span><span class="si">:</span><span class="s2">&lt;9</span><span class="si">}</span><span class="s2">: Failed - </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">bw</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    
+    <span class="c1"># Return best bandwidth</span>
+    <span class="n">best_bw</span><span class="p">,</span> <span class="n">best_acc</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Best bandwidth: </span><span class="si">{</span><span class="n">best_bw</span><span class="si">}</span><span class="s2"> (Accuracy: </span><span class="si">{</span><span class="n">best_acc</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">best_bw</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Applying Bayesian classification using 1D Gaussian Kernel Density Estimation(KDE) with different bandwidths.
+Hence, we need loop over a list of bandwidths to test how KDE changes dependone on the distributions. We set the range at 5 and went to see how it varies among these 5 accuracy values and how big the gap is between them.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[284]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">bandwidths</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;scott&#39;</span><span class="p">,</span> <span class="s1">&#39;silverman&#39;</span><span class="p">]</span>
+<span class="n">accuracies</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">7000</span><span class="p">,</span><span class="mi">30000</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">bw</span> <span class="ow">in</span> <span class="n">bandwidths</span><span class="p">:</span>
+    <span class="n">kde_female</span><span class="p">,</span><span class="n">kde_all</span> <span class="o">=</span> <span class="n">MakeKDEs</span><span class="p">(</span><span class="n">bandwidth</span><span class="o">=</span><span class="n">bw</span><span class="p">)</span>
+    <span class="c1">#plt.plot(x,kde_female(x),&#39;r-&#39;)</span>
+    <span class="c1">#plt.plot(x,kde_all(x),&#39;b-&#39;)</span>
+    <span class="c1">#plt.show()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">bw</span><span class="p">)</span>
+    <span class="n">acc</span><span class="o">=</span> <span class="n">TestClassifier</span><span class="p">(</span><span class="n">kde_female</span><span class="o">=</span><span class="n">kde_female</span><span class="p">,</span><span class="n">kde_all</span><span class="o">=</span><span class="n">kde_all</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span>
+    <span class="n">accuracies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.1
+0.652851711026616
+0.5
+0.6526615969581749
+1.0
+0.6361216730038023
+scott
+0.6534220532319391
+silverman
+0.6532319391634981
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[285]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">accuracies</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[285]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>[0.652851711026616,
+ 0.6526615969581749,
+ 0.6361216730038023,
+ 0.6534220532319391,
+ 0.6532319391634981]</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="color:red;">Plotting these results would be informative.</p>
+<p style="color:red;">What bandwidths are actually used for the Sott and Silverman cases?</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Based on our selection of five data sets we can see that the accuracy of 1dimensionKDE is in the range of 63% -65%.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>2.2 Compute 2-Dimensional KDE<a rel="noopener" class="anchor-link" href="#2.2-Compute-2-Dimensional-KDE">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After we did the 1D Guassian KDE, we can use both time and age as input features to performing the 2D
+Guassian kernel Density Estimation.(KDE). Why we use 2D KDE here?</p>
+<ul>
+<li>The 1D model only used for time, which may not can catch the full difference between genders.</li>
+<li>Secondly, this 2- Dimension include gae, which can provide more information and improve the accuracy.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The Bayes&#39; theorem:
+$$
+P(female \mid time, Age) = \frac{P(time, Age \mid female) \cdot P(female)}{P(time, Age)}
+$$</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hence, the bayes&#39;theorem also changed follor the two different element,
+The KDE is defined over the joint space $P$(finish time, age|gender). 
+We need &quot;Marathon finish time&quot; and &quot;Age&quot;.
+At first, we will follow the same steps from the part 1. Crate a function named &#39;bayes_2d_classifier&#39; with two parameter.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[13]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Make2DKDEs</span><span class="p">(</span><span class="n">bandwidth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">train_set</span><span class="o">=</span><span class="n">train_set</span><span class="p">):</span>
+     
+    <span class="c1"># Prepare 2D data</span>
+    <span class="n">female_data</span> <span class="o">=</span> <span class="n">train_set</span><span class="p">[</span><span class="n">train_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">T</span>
+    <span class="n">all_data</span> <span class="o">=</span> <span class="n">train_set</span><span class="p">[[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">T</span>
+    
+    
+    
+    <span class="c1"># Create KDE models</span>
+    <span class="n">kde_female</span> <span class="o">=</span> <span class="n">gaussian_kde</span><span class="p">(</span><span class="n">female_data</span><span class="p">)</span>
+    <span class="n">kde_all</span> <span class="o">=</span> <span class="n">gaussian_kde</span><span class="p">(</span><span class="n">all_data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">kde_female</span><span class="p">,</span><span class="n">kde_all</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[14]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">kde_2d_female</span><span class="p">,</span><span class="n">kde_2d_all</span><span class="o">=</span><span class="n">Make2DKDEs</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then train KDEs for each class, we already import the library before, hence, we do not have to import this time.
+We can create a variable named kde_f2, it means for female 2D KDE and tt estimate $P$($Time$ = t, $Age$ = a|female).
+Hence, we also can create a variable named kde_m2 to refer to male.When we use 2D Kernel Density Estimation model to try to predict a Mataton&#39;s gender, 
+we need to based on the participant&#39;s finish time and age. 
+Hence, first looping over the testing dataset to make predictions.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[15]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bayes_2d_classifier</span><span class="p">(</span><span class="n">test_set</span><span class="o">=</span><span class="n">test_set</span><span class="p">,</span><span class="n">kde_2d_female</span><span class="o">=</span><span class="n">kde_2d_female</span><span class="p">,</span><span class="n">kde_2d_all</span><span class="o">=</span><span class="n">kde_2d_all</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;2D Bayesian classifier using finish times and ages&quot;&quot;&quot;</span>
+   
+    <span class="n">female_data</span> <span class="o">=</span> <span class="n">train_set</span><span class="p">[</span><span class="n">train_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">T</span>
+    <span class="n">all_data</span> <span class="o">=</span> <span class="n">train_set</span><span class="p">[[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">T</span>
+    <span class="c1"># Then we can calculate priors</span>
+    <span class="n">p_female</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">female_data</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_data</span><span class="p">)</span>
+    <span class="n">p_time_age</span> <span class="o">=</span> <span class="n">kde_2d_all</span><span class="p">(</span><span class="n">test_set</span><span class="p">)</span>
+    <span class="n">p_time_age_F</span> <span class="o">=</span> <span class="n">kde_2d_female</span><span class="p">(</span><span class="n">test_set</span><span class="p">)</span>
+    <span class="n">p_F_result</span> <span class="o">=</span> <span class="p">(</span><span class="n">p_time_age_F</span><span class="o">*</span><span class="n">p_female</span><span class="p">)</span><span class="o">/</span><span class="n">p_time_age</span>
+    <span class="k">return</span> <span class="n">p_F_result</span><span class="o">&gt;</span><span class="mf">0.5</span>
+    
+    
+   
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We will follow the 2D KDE to check the proability. For the return false, if the value return &quot;True&quot;
+that means is female. Otherwise, it will return male.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[16]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">bayes_2d_classifier</span><span class="p">([</span><span class="mi">47000</span><span class="p">,</span> <span class="mi">40</span><span class="p">])</span> <span class="c1"># This case shows that the 47000sec, and age is 40. It should be a male</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/var/folders/64/cdy5_0qs30jc8s4ynctc5btcrjjqrn/T/ipykernel_18353/2475777581.py:10: RuntimeWarning: invalid value encountered in divide
+  p_F_result = (p_time_age_F*p_female)/p_time_age
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[16]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>array([False])</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[17]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">bayes_2d_classifier</span><span class="p">([</span><span class="mi">27536</span><span class="p">,</span> <span class="mi">64</span><span class="p">])</span> <span class="c1"># We can check the case from the test_set, it is female.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[17]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ True])</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[20]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">TestClassifier2D</span><span class="p">(</span><span class="n">test_set</span><span class="o">=</span><span class="n">test_set</span><span class="p">,</span><span class="n">kde_2d_female</span><span class="o">=</span><span class="n">kde_2d_female</span><span class="p">,</span><span class="n">kde_2d_all</span><span class="o">=</span><span class="n">kde_2d_all</span><span class="p">):</span>
+    <span class="n">test_true</span> <span class="o">=</span> <span class="n">test_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    <span class="n">predMF</span> <span class="o">=</span> <span class="n">bayes_2d_classifier</span><span class="p">(</span><span class="n">test_set</span><span class="p">[[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">,</span><span class="s1">&#39;Age&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">T</span><span class="p">,</span><span class="n">kde_2d_female</span><span class="o">=</span><span class="n">kde_2d_female</span><span class="p">,</span><span class="n">kde_2d_all</span><span class="o">=</span><span class="n">kde_2d_all</span><span class="p">)</span>
+    <span class="n">numcorrect</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">predMF</span><span class="o">==</span><span class="n">test_true</span><span class="p">)</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">numcorrect</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">test_true</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">accuracy</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[21]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">TestClassifier2D</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[21]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>0.7083650190114068</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="color:red;">Your submitted code had an error due to missing a transpose, I fixed it.</p>
+<p style="color:red;">-1</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As can be seen by our accuracy data, for 1-dimension kde, the accuracy values are roughly in the 63%-65% range. However, we can see that when we add the condition “Age”, our accuracy increases to 70%. This shows that “Age” can help us filter out some non-compliant conditions in a very large testing dataset.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>3. Computing the accuracy of prediction:<a rel="noopener" class="anchor-link" href="#3.-Computing-the-accuracy-of-prediction:">&#182;</a></h1><h3>3.1Using K-NN algorithm<a rel="noopener" class="anchor-link" href="#3.1Using-K-NN-algorithm">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the third part, it will be compute the accuracy of prediction by using K-NN algorithm.
+And compare which one algorithm will be more accurate. Hence, before we apply the KNN algorithm, we have to understand
+how can use the K-NN algorithm doing prediction.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can Briefly review the K-NN algorithm: KNN is a nonparametric statistical method for classification and regression, which is often used with machine learning. So in our marathon project, it was used to determine whether a runner was male or female. We can also simply understand that the KNN algorithm tells us “look at what my neighbor says, and I&#39;ll go with it”. So we know the basic structure is that for a data point, the KNN will first focus on training our large database and select the “k” closest neighbors to itself, and then use the votes of these nearby neighbors to determine its own classification.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can Briefly review the K-NN algorithm: KNN is a nonparametric statistical method for classification and regression, which is often used with maSo we will try  to use KNN algorithm to predict the gender. We do not have to modeling the 
+probability distribution like in Bayes&#39; theorem. Hence, let us understand how can we use the K_NN algorithm to make the prediction.</p>
+<ul>
+<li>1) Because we have big trian_set and test_set, we need to choose a number of neighbors.</li>
+<li>2) Targeting a new data point, and measure the distance( utilize Euclidean) to the all training samples.</li>
+<li>3) Find the k-closet training samples.</li>
+<li>4) Ussing the majority vote to assign the prediction.chine learning. So in our marathon project, it was used to determine whether a runner was male or female. We can also simply understand that the KNN algorithm tells us “look at what my neighbor says, and I&#39;ll go with it”. So we know the basic structure is that for a data point, the KNN will first focus on training our large database and select the “k” closest neighbors to itself, and then use the votes of these nearby neighbors to determine its own classification.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>3.12 For 1-Dimension &quot;Time(s)&quot;<a rel="noopener" class="anchor-link" href="#3.12-For-1-Dimension-%22Time(s)%22">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[320]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># import the libraries again for convinence</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">]</span>
+
+<span class="c1"># Drop rows with missing data in &#39;Official Time&#39; or &#39;Gender&#39;</span>
+<span class="n">train_set_clean</span> <span class="o">=</span> <span class="n">train_set</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features</span><span class="p">)</span>
+<span class="n">test_set_clean</span> <span class="o">=</span> <span class="n">test_set</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features</span><span class="p">)</span>
+
+<span class="n">accuracies</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span>
+    <span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_set_clean</span><span class="p">[</span><span class="n">features</span><span class="p">],</span> <span class="n">train_set_clean</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">])</span>
+    <span class="n">preds</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_set_clean</span><span class="p">[</span><span class="n">features</span><span class="p">])</span>
+    <span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_set_clean</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">],</span> <span class="n">preds</span><span class="p">)</span>
+    <span class="n">accuracies</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">acc</span><span class="p">))</span>
+
+<span class="c1"># Print results</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">acc</span> <span class="ow">in</span> <span class="n">accuracies</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;k = </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">, accuracy = </span><span class="si">{</span><span class="n">acc</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>k = 1, accuracy = 0.5736
+k = 2, accuracy = 0.5787
+k = 3, accuracy = 0.6008
+k = 4, accuracy = 0.5966
+k = 5, accuracy = 0.6133
+k = 6, accuracy = 0.5952
+k = 7, accuracy = 0.6093
+k = 8, accuracy = 0.5994
+k = 9, accuracy = 0.6203
+k = 10, accuracy = 0.6103
+k = 11, accuracy = 0.6190
+k = 12, accuracy = 0.6091
+k = 13, accuracy = 0.6205
+k = 14, accuracy = 0.6141
+k = 15, accuracy = 0.6221
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="color:red;">This is an interesting result, have a bonus point!</p>
+<p style="color:red;">+1</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>3.13 For 2-dimension &quot;Time(s)&quot; and &quot;Age&quot;<a rel="noopener" class="anchor-link" href="#3.13-For-2-dimension-%22Time(s)%22-and-%22Age%22">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[299]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Define two features to use for KNN </span>
+<span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">]</span>
+
+<span class="c1"># Then we have to trainset the KNN model</span>
+<span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_set</span><span class="p">[</span><span class="n">features</span><span class="p">],</span> <span class="n">train_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">])</span>
+
+<span class="c1"># Predict using the test set</span>
+<span class="n">knn_predictions</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_set</span><span class="p">[</span><span class="n">features</span><span class="p">])</span>
+
+<span class="c1"># we will predict the accuracy</span>
+<span class="n">knn_accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_set</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">],</span> <span class="n">knn_predictions</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;KNN Classification Accuracy: </span><span class="si">{</span><span class="n">knn_accuracy</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>KNN Classification Accuracy: 0.7179
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[300]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Drop rows with missing female and male or missing values in the features</span>
+<span class="n">train_set_clean</span> <span class="o">=</span> <span class="n">train_set</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features</span><span class="p">)</span>
+<span class="n">test_set_clean</span> <span class="o">=</span> <span class="n">test_set</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then we will select the k nearest sample data by the steps III and IV described above and finally feel the classification based on the class distribution of the k sample data. Since our marathon database is too large, I have tried to select 1-15 sample distributions that can help us to better see the relevant accuracy data and the differences between them.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[303]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">accuracies</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">):</span>
+    <span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_set_clean</span><span class="p">[</span><span class="n">features</span><span class="p">],</span> <span class="n">train_set_clean</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">])</span>
+    <span class="n">preds</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_set_clean</span><span class="p">[</span><span class="n">features</span><span class="p">])</span>
+    <span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_set_clean</span><span class="p">[</span><span class="s1">&#39;M/F&#39;</span><span class="p">],</span> <span class="n">preds</span><span class="p">)</span>
+    <span class="n">accuracies</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">acc</span><span class="p">))</span>
+
+<span class="c1"># Display accuracies</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">acc</span> <span class="ow">in</span> <span class="n">accuracies</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;k = </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">, accuracy = </span><span class="si">{</span><span class="n">acc</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>k = 1, accuracy = 0.6774
+k = 2, accuracy = 0.6595
+k = 3, accuracy = 0.7076
+k = 4, accuracy = 0.6971
+k = 5, accuracy = 0.7179
+k = 6, accuracy = 0.7125
+k = 7, accuracy = 0.7253
+k = 8, accuracy = 0.7264
+k = 9, accuracy = 0.7287
+k = 10, accuracy = 0.7251
+k = 11, accuracy = 0.7359
+k = 12, accuracy = 0.7333
+k = 13, accuracy = 0.7382
+k = 14, accuracy = 0.7354
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Based on our data we can see that that accuracy rate is basically sort of sequential. Let&#39;s take an example: when we want to determine whether a running thing is a man or a woman. We already know that the age of the runner is 28 years old and the finishing time is 3 hours and 42 minutes. We can determine this by looking at the 5 runners whose ages and times match. The result is that 3 are male and 2 are female. Then the result will be judged as female.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>4. NYC Marathon ( Bonus Point)<a rel="noopener" class="anchor-link" href="#4.-NYC-Marathon-(-Bonus-Point)">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="color:red;">This does not quite work here are some bonus points for trying.</p>
+<p style="color:red;">+3</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Our project will have extra part for the bonus points. We can get the most 
+recent NYC marathon reocds at the webiste: <a rel="noopener" href="https://www.nyrr.org/tcsnycmarathon/results/race-results">https://www.nyrr.org/tcsnycmarathon/results/race-results</a>. We can use the requests and Beautiful soup to scrape the top 10 finishers. 
+According to the dataframe with the runners, we can through the different ways to analysis.
+The elements could be: Name, Gender, Age, Place, Finishing Time.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then, for the bonus point part, we have to scrape top 10 finishers. Then we have to import the link
+to help us figure out the data. First of all, inmport the libraries for our convinence.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[310]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[311]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># At first, we will use the url from the project </span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://www.nyrr.org/tcsnycmarathon/results/race-results&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[312]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Then, we have to send HTTP request</span>
+<span class="n">HTML</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="c1"># Then made the wonderful soup</span>
+<span class="n">Soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">HTML</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[313]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">Soup</span> <span class="c1"># We show the soup(HTML from the Link)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[313]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html class=&quot;no-js hide-debug&quot; lang=&quot;en-US&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;meta content=&quot;index, follow&quot; name=&quot;robots&quot;/&gt;
+&lt;meta content=&quot;index, follow&quot; name=&quot;googlebot&quot;/&gt;
+&lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot;/&gt;
+&lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;/&gt;
+&lt;meta content=&quot;IE=edge&quot; http-equiv=&quot;X-UA-Compatible&quot;/&gt;
+&lt;meta content=&quot;IE=Edge&quot; http-equiv=&quot;X-UA-Compatible&quot;/&gt;
+&lt;title&gt;Race Results &lt;/title&gt;
+&lt;link href=&quot;/favicon.ico&quot; rel=&quot;shortcut icon&quot;/&gt;
+&lt;!-- icon in the highest resolution we need it for --&gt;
+&lt;link href=&quot;/images/icons/icon.png&quot; rel=&quot;icon&quot; sizes=&quot;192x192&quot;/&gt;
+&lt;!-- reuse same icon for Safari --&gt;
+&lt;link href=&quot;/images/icons/ios-icon.png&quot; rel=&quot;apple-touch-icon&quot;/&gt;
+&lt;!-- multiple icons for IE --&gt;
+&lt;meta content=&quot;/images/icons/icon_largetile.png&quot; name=&quot;msapplication-square310x310logo&quot;/&gt;
+&lt;!-- Actual code for apple-touch --&gt;
+&lt;link href=&quot;/images/icons/touch-icon-iphone.png&quot; rel=&quot;apple-touch-icon&quot;/&gt;
+&lt;link href=&quot;https://fonts.googleapis.com&quot; rel=&quot;preconnect&quot;/&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Inter&quot; media=&quot;none&quot; onload=&quot;if(media!=&#39;all&#39;)media=&#39;all&#39;&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;/bundles/css/global?v=NXjb3VFDwdorste9gfzxhDL5v8XFNNzUQq3r7mQV3x01&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;/dist/Styles/internal_shared.css?v=23.29.3_41&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script src=&quot;/bundles/js/baseLayout?v=CVtr_k258A8MaCj3YOlF0zwvciQ5re7gLNUFKacIlxU1&quot;&gt;&lt;/script&gt;
+&lt;meta content=&quot;Results, race results, result&quot; property=&quot;keywords&quot;&gt;
+&lt;meta content=&quot;Looking for specific results? You will find all results and result demographics for the TCS New York City Marathon here.&quot; name=&quot;description&quot;/&gt;
+&lt;meta content=&quot;&quot; name=&quot;author&quot;/&gt;
+&lt;meta content=&quot;1721349057979695&quot; property=&quot;fb:app_id&quot;/&gt;
+&lt;meta content=&quot;&quot; property=&quot;og:site_name&quot;/&gt;
+&lt;meta content=&quot;Race Results&quot; property=&quot;og:title&quot;/&gt;
+&lt;meta content=&quot;Looking for specific results? You will find all results and result demographics for the TCS New York City Marathon here.&quot; property=&quot;og:description&quot;/&gt;
+&lt;meta content=&quot;&quot; property=&quot;og:type&quot;/&gt;
+&lt;meta content=&quot;https://www.nyrr.org/tcsnycmarathon/results/race-results&quot; property=&quot;og:url&quot;/&gt;
+&lt;meta content=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/photogallery/2023/end-course-and-finish-line/26_nycm23_sameday_ar_070.jpg&quot; property=&quot;og:image&quot;/&gt;
+&lt;meta content=&quot;vjpkis9bc2lbgiz885t4v6sx1l9yeg&quot; name=&quot;facebook-domain-verification&quot;&gt;
+&lt;script&gt;
+        // https://github.com/filamentgroup/loadCSS
+        !function (e) {
+            &quot;use strict&quot;
+            var n = function (n, t, o) {
+                function i(e) { return f.body ? e() : void setTimeout(function () { i(e) }) } var d, r, a, l, f = e.document, s = f.createElement(&quot;link&quot;), u = o || &quot;all&quot;
+                return t ? d = t : (r = (f.body || f.getElementsByTagName(&quot;head&quot;)[0]).childNodes, d = r[r.length - 1]), a = f.styleSheets, s.rel = &quot;stylesheet&quot;, s.href = n, s.media = &quot;only x&quot;, i(function () { d.parentNode.insertBefore(s, t ? d : d.nextSibling) }), l = function (e) {
+                    for (var n = s.href, t = a.length; t--;)if (a[t].href === n) return e()
+                    setTimeout(function () { l(e) })
+                }, s.addEventListener &amp;&amp; s.addEventListener(&quot;load&quot;, function () { this.media = u }), s.onloadcssdefined = l, l(function () { s.media !== u &amp;&amp; (s.media = u) }), s
+            }
+            &quot;undefined&quot; != typeof exports ? exports.loadCSS = n : e.loadCSS = n
+        }(&quot;undefined&quot; != typeof global ? global : this)
+
+        /*! onloadCSS. (onload callback for loadCSS) [c]2017 Filament Group, Inc. MIT License */
+        function onloadCSS(n, a) { function t() { !d &amp;&amp; a &amp;&amp; (d = !0, a.call(n)) } var d; n.addEventListener &amp;&amp; n.addEventListener(&quot;load&quot;, t), n.attachEvent &amp;&amp; n.attachEvent(&quot;onload&quot;, t), &quot;isApplicationInstalled&quot; in navigator &amp;&amp; &quot;onloadcssdefined&quot; in n &amp;&amp; n.onloadcssdefined(t) }
+    &lt;/script&gt;
+&lt;script&gt;
+        window.domLoaded = false;
+        window.polyfillsLoaded = false;
+        window.asyncStylesLoaded = false;
+        window.handlePolyfillsLoaded = function () {
+            window.polyfillsLoaded = true;
+            if (window.domLoaded &amp;&amp; window.asyncStylesLoaded) {
+                window.A17.onReady();
+            }
+        };
+
+    &lt;/script&gt;
+&lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?callback=handlePolyfillsLoaded&amp;amp;features=default,fetch,es6&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                &#39;gtm.start&#39;:
+                    new Date().getTime(), event: &#39;gtm.js&#39;
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;; j.async = true; j.src =
+                    &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-NWV6LQ5&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;!-- Twitter universal website tag code --&gt;
+&lt;script&gt;
+        !function (e, t, n, s, u, a) {
+            e.twq || (s = e.twq = function () {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }, s.version = &#39;1.1&#39;, s.queue = [], u = t.createElement(n), u.async = !0, u.src = &#39;//static.ads-twitter.com/uwt.js&#39;,
+                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, &#39;script&#39;);
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq(&#39;init&#39;, &#39;TAG_ID&#39;);
+        twq(&#39;track&#39;, &#39;Purchase&#39;, {
+            //required parameters
+            value: &#39;29.95&#39;,
+            currency: &#39;USD&#39;,
+            num_items: &#39;3&#39;,
+        });
+    &lt;/script&gt;
+&lt;!-- Facebook Pixel Code --&gt;
+&lt;script&gt;
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = &#39;2.0&#39;;
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, &#39;script&#39;,
+            &#39;https://connect.facebook.net/en_US/fbevents.js&#39;);
+        fbq(&#39;init&#39;, &#39;410397819827079&#39;);
+        fbq(&#39;track&#39;, &#39;PageView&#39;);
+    &lt;/script&gt;
+&lt;noscript&gt;
+&lt;img height=&quot;1&quot; src=&quot;https://www.facebook.com/tr?id=410397819827079&amp;amp;ev=PageView&amp;amp;noscript=1&quot; style=&quot;display:none&quot; width=&quot;1&quot;/&gt;
+&lt;/noscript&gt;
+&lt;!-- End Facebook Pixel Code --&gt;
+&lt;!--Start Application Insights Code --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+        !function (T, l, y) { var S = T.location, k = &quot;script&quot;, D = &quot;instrumentationKey&quot;, C = &quot;ingestionendpoint&quot;, I = &quot;disableExceptionTracking&quot;, E = &quot;ai.device.&quot;, b = &quot;toLowerCase&quot;, w = &quot;crossOrigin&quot;, N = &quot;POST&quot;, e = &quot;appInsightsSDK&quot;, t = y.name || &quot;appInsights&quot;; (y.name || T[e]) &amp;&amp; (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: &quot;5&quot;, version: 2, config: d }; function v(e, t) { var n = {}, a = &quot;Browser&quot;; return n[E + &quot;id&quot;] = a[b](), n[E + &quot;type&quot;] = a, n[&quot;ai.operation.name&quot;] = S &amp;&amp; S.pathname || &quot;_unknown_&quot;, n[&quot;ai.internal.sdkVersion&quot;] = &quot;javascript:snippet_&quot; + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = &quot;&quot; + e; return 1 === t.length &amp;&amp; (t = &quot;0&quot; + t), t } return e.getUTCFullYear() + &quot;-&quot; + t(1 + e.getUTCMonth()) + &quot;-&quot; + t(e.getUTCDate()) + &quot;T&quot; + t(e.getUTCHours()) + &quot;:&quot; + t(e.getUTCMinutes()) + &quot;:&quot; + t(e.getUTCSeconds()) + &quot;.&quot; + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + &quot;&quot;).slice(2, 5) + &quot;Z&quot; }(), iKey: e, name: &quot;Microsoft.ApplicationInsights.&quot; + e.replace(/-/g, &quot;&quot;) + &quot;.&quot; + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, u, p, l; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(&quot;;&quot;), a = 0; a &lt; n.length; a++) { var i = n[a].split(&quot;=&quot;); 2 === i.length &amp;&amp; (e[i[0][b]()] = i[1]) } if (!e[C]) { var r = e.endpointsuffix, o = r ? e.location : null; e[C] = &quot;https://&quot; + (o ? o + &quot;.&quot; : &quot;&quot;) + &quot;dc.&quot; + (r || &quot;services.visualstudio.com&quot;) } return e }(), c = s[D] || d[D] || &quot;&quot;, u = s[C], p = u ? u + &quot;/v2/track&quot; : d.endpointUrl, (l = []).push((n = &quot;SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)&quot;, a = t, i = p, (o = (r = v(c, &quot;Exception&quot;)).data).baseType = &quot;ExceptionData&quot;, o.baseData.exceptions = [{ typeName: &quot;SDKLoadFailed&quot;, message: n.replace(/\./g, &quot;-&quot;), hasFullStack: !1, stack: n + &quot;\nSnippet failed to load [&quot; + a + &quot;] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: &quot; + (S &amp;&amp; S.pathname || &quot;_unknown_&quot;) + &quot;\nEndpoint: &quot; + i, parsedStack: [] }], r)), l.push(function (e, t, n, a) { var i = v(c, &quot;Message&quot;), r = i.data; r.baseType = &quot;MessageData&quot;; var o = r.baseData; return o.message = &#39;AI (Internal): 99 message:&quot;&#39; + (&quot;SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (&quot; + n + &quot;)&quot;).replace(/\&quot;/g, &quot;&quot;) + &#39;&quot;&#39;, o.properties = { endpoint: a }, i }(0, 0, t, p)), function (e, t) { if (JSON) { var n = T.fetch; if (n &amp;&amp; !y.useXhr) n(t, { method: N, body: JSON.stringify(e), mode: &quot;cors&quot; }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(N, t), a.setRequestHeader(&quot;Content-type&quot;, &quot;application/json&quot;), a.send(JSON.stringify(e)) } } }(l, p)) } function i(e, t) { f || setTimeout(function () { !t &amp;&amp; m.core || a() }, 500) } var e = function () { var n = l.createElement(k); n.src = h; var e = y[w]; return !e &amp;&amp; &quot;&quot; !== e || &quot;undefined&quot; == n[w] || (n[w] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { &quot;loaded&quot; !== n.readyState &amp;&amp; &quot;complete&quot; !== n.readyState || i(0, t) }, n }(); y.ld &lt; 0 ? l.getElementsByTagName(&quot;head&quot;)[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(k)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = &quot;track&quot;, r = &quot;TrackPage&quot;, o = &quot;TrackEvent&quot;; t([n + &quot;Event&quot;, n + &quot;PageView&quot;, n + &quot;Exception&quot;, n + &quot;Trace&quot;, n + &quot;DependencyData&quot;, n + &quot;Metric&quot;, n + &quot;PageViewPerformance&quot;, &quot;start&quot; + r, &quot;stop&quot; + r, &quot;start&quot; + o, &quot;stop&quot; + o, &quot;addTelemetryInitializer&quot;, &quot;setAuthenticatedUserContext&quot;, &quot;clearAuthenticatedUserContext&quot;, &quot;flush&quot;]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[I] &amp;&amp; !0 !== s[I]) { var c = &quot;onerror&quot;; t([&quot;_&quot; + c]); var u = T[c]; T[c] = function (e, t, n, a, i) { var r = u &amp;&amp; u(e, t, n, a, i); return !0 !== r &amp;&amp; m[&quot;_&quot; + c]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); function a() { y.onInit &amp;&amp; y.onInit(n) } (T[t] = n).queue &amp;&amp; 0 === n.queue.length ? (n.queue.push(a), n.trackPageView({})) : a() }(window, document, {
+            src: &quot;https://js.monitor.azure.com/scripts/b/ai.2.min.js&quot;, // The SDK URL Source
+            // name: &quot;appInsights&quot;, // Global SDK Instance name defaults to &quot;appInsights&quot; when not supplied
+            // ld: 0, // Defines the load delay (in ms) before attempting to load the sdk. -1 = block page load and add to head. (default) = 0ms load after timeout,
+            // useXhr: 1, // Use XHR instead of fetch to report failures (if available),
+            crossOrigin: &quot;anonymous&quot;, // When supplied this will add the provided value as the cross origin attribute on the script tag
+            // onInit: null, // Once the application insights instance has loaded and initialized this callback function will be called with 1 argument -- the sdk instance (DO NOT ADD anything to the sdk.queue -- As they won&#39;t get called)
+            cfg: { // Application Insights Configuration
+                instrumentationKey: &quot;dbf36239-5a61-4b53-88e0-12ada1704636&quot;
+            }
+        });
+    &lt;/script&gt;
+&lt;!-- End Application Insights Code --&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/css/intlTelInput.css&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/js/intlTelInput.min.js&quot;&gt;&lt;/script&gt;
+&lt;/meta&gt;&lt;/meta&gt;&lt;/link&gt;&lt;/link&gt;&lt;/link&gt;&lt;/head&gt;
+&lt;body class=&quot;marathon_pages&quot;&gt;
+&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;
+&lt;iframe height=&quot;0&quot; src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-NWV6LQ5&quot; style=&quot;display:none;visibility:hidden&quot; width=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;/noscript&gt;
+&lt;script&gt;
+        function ResizerIframeNew() {
+            iFrameResize({ log: true, enablePublicMethods: true, heightCalculationMethod: &#39;bodyOffset&#39;, checkOrigin: false }, &#39;#IframeId&#39;);
+            $(&quot;html, body&quot;).animate({ scrollTop: 0 }, 400);
+        }
+        function RedirectToCheckout() {
+            window.location = &quot;/checkout/participantinfo&quot;;
+        }
+    &lt;/script&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+&lt;div class=&quot;shell&quot;&gt;
+&lt;div class=&quot;shell__inner&quot;&gt;
+&lt;div id=&quot;header_leaderboard_ad_container&quot;&gt;
+&lt;/div&gt;
+&lt;div id=&quot;header&quot;&gt;
+&lt;!-- start header --&gt;
+&lt;div class=&quot;mobile_nav_overlay@medium- loadFunctionOnLoad 11111&quot; data-behavior=&quot;MobileNav&quot; data-functiononload=&quot;onloadHeader&quot; data-mobilenav-media=&quot;medium-&quot;&gt;
+&lt;div class=&quot;desktop_header@large+ mobile_nav@medium- bg-invert@large+&quot;&gt;
+&lt;a class=&quot;desktop_header@large+__logo mobile_nav@medium-__logo intro-fixpos&quot; href=&quot;/tcsnycmarathon&quot; id=&quot;logo&quot;&gt;
+&lt;img alt=&quot;TCS New York City Marathon logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/homepage_mara_logo_nycm_horizontallogo_fc_rgb.png?width=*&amp;amp;height=*&quot;/&gt;
+&lt;/a&gt;
+&lt;div class=&quot;desktop_header@large+__body mobile_nav@medium-__body&quot;&gt;
+&lt;nav class=&quot;mobile_nav@medium-__bottom&quot;&gt;
+&lt;div class=&quot;desktop_header@large+__util mobile_nav@medium-__bottom__lists&quot;&gt;
+&lt;div class=&quot;desktop_header@large+__util__list mobile_nav@medium-__bottom__lists__list&quot; data-behavior=&quot;NavOverflow&quot; data-navoverflow-dropdownid=&quot;morelink&quot; data-navoverflow-limit=&quot;5&quot; data-navoverflow-media=&quot;large+&quot;&gt;
+&lt;ul class=&quot;desktop_header@large+__util__list__inner 555&quot;&gt;
+&lt;li class=&quot;hide@large+&quot;&gt;&lt;a class=&quot;c-subtle@large+ f-small&quot; href=&quot;/tcsnycmarathon&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li data-navoverflow-item=&quot;&quot;&gt;
+&lt;div class=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-media=&quot;large+&quot;&gt;
+&lt;a class=&quot;hide@medium- c-subtle--with_hover@large+ f-small&quot; data-dropdown-link=&quot;&quot; href=&quot;&quot;&gt;
+&lt;span&gt;NYRR&lt;/span&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down small_dropdown_icon&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;utils_left_0&quot;&gt;
+&lt;ul class=&quot;z-2@large+ header_util_dropdown@large+ dropdown_layer@large+ dropdown_layer@large+--centered is-small-dropdown&quot;&gt;
+&lt;li class=&quot;header_util_dropdown@large+__item&quot;&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small&quot; href=&quot;/about&quot; title=&quot;About NYRR&quot;&gt; About NYRR &lt;/a&gt; &lt;/li&gt;
+&lt;li class=&quot;header_util_dropdown@large+__item&quot;&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small&quot; href=&quot;/&quot; title=&quot;NYRR Home&quot;&gt; NYRR Home &lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li data-navoverflow-item=&quot;&quot;&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small&quot; href=&quot;/media-center&quot;&gt; Media Center &lt;/a&gt; &lt;/li&gt;
+&lt;li data-navoverflow-item=&quot;&quot;&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small&quot; href=&quot;/tcsnycmarathon/partners&quot;&gt; Partners &lt;/a&gt; &lt;/li&gt;
+&lt;li data-navoverflow-morelink=&quot;&quot;&gt;
+&lt;a class=&quot;c-subtle--with_hover@large+ f-small hide@medium-&quot; data-navoverflow-morelinkinner=&quot;&quot; href=&quot;#&quot;&gt;
+                    More
+                    &lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down small_dropdown_icon&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;div data-navoverflow-portal=&quot;&quot; id=&quot;morelink&quot;&gt;
+&lt;div class=&quot;desktop_nav@large+__sub header_util_dropdown@large+ z-2@large+ dropdown_layer@large+ dropdown_layer@large+--centered&quot; data-navoverflow-morelist=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;template data-navoverflow-moreitemtemplate=&quot;&quot;&gt;
+&lt;div class=&quot;header_util_dropdown@large+__item&quot;&gt; &lt;a href=&quot;#&quot;&gt;&#160;&lt;/a&gt; &lt;/div&gt;
+&lt;/template&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;desktop_header@large+__util__list mobile_nav@medium-__bottom__lists__list&quot;&gt;
+&lt;ul class=&quot;desktop_header@large+__util__list__inner 444&quot;&gt;
+&lt;li&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small navTitle&quot; href=&quot;https://donations.nyrr.org/donations/new?fundraising_effort=new-york-road-runners&amp;amp;_gl=1*65e0fn*_gcl_au*NTg3OTI3MTAzLjE3NDA0MTIyMDc.&quot; target=&quot;_blank&quot;&gt; Donate &lt;/a&gt; &lt;/li&gt;
+&lt;li&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small&quot; href=&quot;https://help.nyrr.org/tcsnycmarathon/s/&quot; target=&quot;&quot;&gt; Help &lt;/a&gt; &lt;/li&gt;
+&lt;li data-navoverflow-item=&quot;&quot;&gt;
+&lt;div class=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-media=&quot;large+&quot;&gt;
+&lt;a class=&quot;hide@medium- c-subtle--with_hover@large+ f-small&quot; data-dropdown-link=&quot;&quot; href=&quot;&quot;&gt;
+&lt;span&gt;Shop&lt;/span&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down small_dropdown_icon&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;utils_left_0&quot;&gt;
+&lt;ul class=&quot;z-2@large+ header_util_dropdown@large+ dropdown_layer@large+ dropdown_layer@large+--centered is-small-dropdown&quot;&gt;
+&lt;li class=&quot;header_util_dropdown@large+__item&quot;&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small&quot; href=&quot;https://www.newbalance.com/nyrr/ &quot; target=&quot;_blank&quot; title=&quot;Shop New Balance&quot;&gt; Shop New Balance &lt;/a&gt; &lt;/li&gt;
+&lt;li class=&quot;header_util_dropdown@large+__item&quot;&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small&quot; href=&quot;https://www.marathonfoto.com/Landing/27042019F2/2019-tcs-new-york-city-marathon&quot; target=&quot;_blank&quot; title=&quot;Find and Buy Photos&quot;&gt; Find and Buy Photos &lt;/a&gt; &lt;/li&gt;
+&lt;li class=&quot;header_util_dropdown@large+__item&quot;&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small&quot; href=&quot;https://www.ericasara.com/collections/official-tcs-new-york-city-marathon-collection?utm_source=nyrr&amp;amp;utm_medium=partner&amp;amp;utm_campaign=tcsnycm-lp&quot; target=&quot;_blank&quot; title=&quot;Erica Sara&quot;&gt; Erica Sara &lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt; &lt;a class=&quot;c-subtle--with_hover@large+ f-small signinStep&quot; href=&quot;http://manage.nyrr.org/login/nyrr&quot; target=&quot;_blank&quot;&gt; Account &lt;/a&gt; &lt;/li&gt;
+&lt;li class=&quot;language_link&quot; data-behavior=&quot;Dropdown&quot;&gt;
+&lt;a class=&quot;hide@medium- language__inner&quot; data-dropdown-link=&quot;&quot;&gt;
+&lt;span class=&quot;language__badge&quot;&gt;
+&lt;p class=&quot;language-primary-text&quot;&gt;English&lt;/p&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot;&gt;
+&lt;div class=&quot;cart_panel language_panel&quot;&gt;
+&lt;ul data-behavior=&quot;CartPanel&quot;&gt;
+&lt;li class=&quot;cart_panel__item&quot;&gt;
+&lt;a class=&quot;sc-lang-link no-barba&quot; data-language-code=&quot;&quot; href=&quot;https://www.nyrr.org/tcsnycmarathon/results/race-results&quot; id=&quot;english-clickable&quot;&gt;English&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;cart_panel__item&quot;&gt;
+&lt;a class=&quot;sc-lang-link no-barba&quot; data-language-code=&quot;es&quot; href=&quot;https://www.nyrr.org/es/tcsnycmarathon/results/race-results&quot; id=&quot;spanish-clickable&quot;&gt;Espa&#241;ol (BETA)&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;input id=&quot;hdnCurrentDomain&quot; type=&quot;hidden&quot; value=&quot;https://www.nyrr.org&quot;/&gt;
+&lt;input id=&quot;hdnCurrentPathAndQuery&quot; type=&quot;hidden&quot; value=&quot;/tcsnycmarathon/results/race-results&quot;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+            .simple_form__success {
+                margin-bottom: 60px;
+            }
+
+            .form_success_summary {
+                background-color: #218900;
+                color: #fff;
+                padding: 20px 25px;
+                border-radius: 4px;
+            }
+        &lt;/style&gt;
+&lt;script&gt;
+            var ForgotPasswordClick = function () {
+                $(&quot;.form_success_summary.simple_form__success&quot;).html(&quot;&quot;).hide();
+                $(&quot;#forgot_email&quot;).val(&quot;&quot;).next().removeAttr(&quot;style&quot;).parent().removeClass(&quot;is-error&quot;);
+                setTimeout(function () { $(&quot;#forgot_email&quot;).focus() },200);
+            }
+            window.BeforeSubmitForgotPassword = function (behavior) {
+                $(&quot;.form_success_summary.simple_form__success&quot;).html(&quot;&quot;).hide();
+                return true;
+            };
+            window.ForgotPasswordSuccessCallback = function (behavior) {
+                var message = &quot;If you have an account in our system a reset password link will be sent.&quot;;
+                $(&quot;.form_success_summary.simple_form__success&quot;).html(message).show();
+            };
+        &lt;/script&gt;
+&lt;div data-behavior=&quot;Overlay&quot; data-overlay-id=&quot;forgot_password&quot;&gt;
+&lt;section data-overlay-portal=&quot;&quot; id=&quot;forgot_password&quot;&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+&lt;div class=&quot;overlay__modal&quot; data-overlay-inner=&quot;&quot;&gt;
+&lt;form data-ajaxform-aftersubmitsuccessfn=&quot;ForgotPasswordSuccessCallback&quot; data-ajaxform-beforesubmitfn=&quot;BeforeSubmitForgotPassword&quot; data-ajaxform-formdatamode=&quot;&quot; data-ajaxform-url=&quot;/api/account/forgotpassword&quot; data-behavior=&quot;AjaxForm&quot;&gt;
+&lt;header class=&quot;overlay__header&quot;&gt;
+&lt;h2 class=&quot;overlay__title&quot;&gt;
+                                    Reset Password
+                                &lt;/h2&gt;
+&lt;a class=&quot;overlay__close&quot; data-overlay-close=&quot;&quot; href=&quot;#&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--close&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--close&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;/header&gt;
+&lt;section class=&quot;form_error_summary simple_form__errors&quot; data-ajaxform-errorsummary=&quot;&quot;&gt;&lt;/section&gt;
+&lt;section class=&quot;form_success_summary simple_form__success&quot;&gt;Password&lt;/section&gt;
+&lt;section class=&quot;overlay__section overlay__text overlay__text--alt&quot;&gt;
+&lt;p&gt;To reset the password associated with your account, please enter your email address below and click Reset Password. A link to reset your password will be emailed to you shortly.&lt;/p&gt;
+&lt;div class=&quot;overlay__form&quot;&gt;
+&lt;div class=&quot;overlay__form__errors form_error_summary&quot; data-ajaxform-errorsummary=&quot;&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;field_group overlay__form__inline&quot;&gt;
+&lt;div class=&quot;field_group__field&quot;&gt;
+&lt;div class=&quot;field_group__field field&quot;&gt;
+&lt;label class=&quot;field__label&quot; for=&quot;signin_email&quot;&gt;Email&lt;/label&gt;
+&lt;input class=&quot;field__input input&quot; data-ajaxform-validate=&#39;{&quot;native_error&quot;: &quot;Invalid Email&quot;}&#39; data-overlay-firstinput=&quot;&quot; id=&quot;forgot_email&quot; name=&quot;UserName&quot; type=&quot;text&quot;/&gt;
+&lt;div class=&quot;field__error&quot; data-ajaxform-error=&quot;&quot;&gt;Invalid Username&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;footer class=&quot;overlay__section&quot;&gt;
+&lt;div class=&quot;overlay__actions overlay__actions--split&quot;&gt;
+&lt;div class=&quot;overlay__actions__link&quot;&gt;
+&lt;a class=&quot;secondary_link&quot; data-behavior=&quot;OverlayLink&quot; href=&quot;#global_signin_overlay&quot;&gt;Back to Sign In&lt;/a&gt;
+&lt;/div&gt;
+&lt;button class=&quot;btn btn--small btn--primary&quot; data-ajaxform-submitbtn=&quot;&quot; type=&quot;submit&quot;&gt;
+&lt;span class=&quot;btn__inner&quot;&gt; &lt;span&gt;Reset Password&lt;/span&gt; &lt;/span&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mobile_nav@medium-__bottom__user hide@large+&quot;&gt;
+&lt;ul class=&quot;mobile_nav@medium-__bottom__user__inner&quot;&gt;
+&lt;li class=&quot;mobile_nav@medium-__bottom__user__item&quot;&gt;
+&lt;a class=&quot;f-body&quot; href=&quot;http://manage.nyrr.org/login/nyrr&quot; target=&quot;_blank&quot;&gt;Sign in&lt;/a&gt;
+&lt;li&gt; &lt;/li&gt;
+&lt;/li&gt;
+&lt;li class=&quot;mobile_nav@medium-__bottom__user__item&quot;&gt;
+&lt;a class=&quot;f-body&quot; href=&quot;/join&quot;&gt;Join&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;header class=&quot;desktop_header@large+__main mobile_nav@medium-__top&quot; data-behavior=&quot;DesktopHeaderSearch&quot; data-desktopheadersearch-media=&quot;large+&quot; style=&quot;&quot;&gt;
+&lt;div class=&quot;mobile_nav@medium-__top__header intro-fixpos&quot; data-mobilenav-header=&quot;&quot;&gt;
+&lt;div class=&quot;mobile_nav@medium-__top__header__inner&quot;&gt;
+&lt;div class=&quot;mobile_nav@medium-__top__header__actions&quot;&gt;
+&lt;div class=&quot;mobile_nav@medium-__top__header__actions align_left&quot;&gt;
+&lt;a class=&quot;mobile_nav@medium-__top__header__close hide@large+ signinStepM&quot; data-mobilenav-toggle=&quot;&quot; href=&quot;#&quot;&gt; &lt;span class=&quot;f-btn&quot; data-mobilenav-opentext=&quot;Close&quot;&gt;Menu&lt;/span&gt; &lt;/a&gt;
+&lt;a class=&quot;mobile_nav@medium-__top__header__cal hide@large+ calendarStepS&quot; href=&quot;/run/race-calendar&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg aria-label=&quot;Calendar&quot; class=&quot;icon icon--calendar-2&quot; role=&quot;img&quot;&gt;
+&lt;title&gt;Calendar&lt;/title&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--calendar-2&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;button class=&quot;mobile_nav@medium-__top__header__search hide@large+ hide@small&quot; data-behavior=&quot;ClickToFocus&quot; data-clicktofocus-target=&quot;search&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg aria-label=&quot;Search&quot; class=&quot;icon icon--search&quot; role=&quot;img&quot;&gt;
+&lt;title&gt;Search&lt;/title&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--search&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mobile_nav@medium-__top__header__actions align_right&quot;&gt; &lt;a class=&quot;mobile_nav@medium-__top__header__signin hide@large+ f-btn&quot; href=&quot;http://manage.nyrr.org/login/nyrr&quot; target=&quot;_blank&quot;&gt;Sign in&lt;/a&gt; &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;desktop_header@large+__main__body mobile_nav@medium-__top__inner&quot; data-desktopheadersearch-body=&quot;&quot;&gt;
+&lt;div class=&quot;desktop_header@large+__main__body__inner mobile_nav@medium-__top__inner&quot;&gt;
+&lt;div class=&quot;desktop_header@large+__main__body__item mobile_nav@medium-__top__inner&quot;&gt;
+&lt;nav class=&quot;desktop_nav@large+ mobile_nav@medium-__top__inner__nav&quot; data-behavior=&quot;DesktopNav&quot; data-desktopnav-id=&quot;desktopnav&quot; data-desktopnav-media=&quot;large+&quot;&gt;
+&lt;div&gt;
+&lt;ul class=&quot;desktop_nav@large+__inner&quot; data-accordion-media=&quot;medium-&quot; data-behavior=&quot;Accordion&quot;&gt;
+&lt;li&gt; &lt;a class=&quot;f-nav mobile_nav@medium-__top__inner__nav__item hide@large+&quot; href=&quot;/tcsnycmarathon&quot;&gt; Home &lt;/a&gt; &lt;/li&gt;
+&lt;li data-accordion-item=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-id=&quot;header_dropdown0&quot; data-dropdown-media=&quot;large+&quot; data-dropdown-onclose=&quot;desktopnav:decrease_open&quot; data-dropdown-onopen=&quot;desktopnav:increase_open&quot;&gt;
+&lt;a class=&quot;test f-nav mobile_nav@medium-__top__inner__nav__item desktop_nav@large+__item&quot; data-accordion-link=&quot;&quot; data-behavior=&quot;CurrentNav&quot; data-currentnav-regex=&quot;/tcsnycmarathon/runners&quot; data-dropdown-link=&quot;&quot; href=&quot;#&quot;&gt;
+                                                        RUNNERS
+                                                        &lt;span class=&quot;hide@large+&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;header_dropdown2&quot;&gt;
+&lt;ul class=&quot;z-2@large+ mobile_nav@medium-__top__inner__nav__list desktop_nav@large+__sub header_dropdown@large+ bg-invert@large+ dropdown_layer@large+ dropdown_layer@large+--centered&quot; data-accordion-list=&quot;&quot;&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/runners/entry/2025&quot; title=&quot;Run in 2025&quot;&gt;
+                                                                                    Run in 2025
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/runners/marathon-time-qualifiers&quot; title=&quot;Time Qualifiers&quot;&gt;
+                                                                                    Time Qualifiers
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;https://events.nyrr.org/events/e7b83eb64fed68fd1a02/charity_partners&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Run for Charity&quot;&gt;
+                                                                                    Run for Charity
+                                                                                    &lt;!-- start icon --&gt;&lt;svg class=&quot;icon icon--external&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--external&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;https://events.nyrr.org/events/e7b83eb64fed68fd1a02/partners?source=international&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;International Runners&quot;&gt;
+                                                                                    International Runners
+                                                                                    &lt;!-- start icon --&gt;&lt;svg class=&quot;icon icon--external&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--external&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/runners/athletes-with-disability&quot; title=&quot;Athletes with Disabilities &quot;&gt;
+                                                                                    Athletes with Disabilities 
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/runners/cancellation&quot; title=&quot;Cancellation&quot;&gt;
+                                                                                    Cancellation
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/run/guidelines-and-procedures/policies-rules-and-regulations/rules-of-competition&quot; title=&quot;Rules of Competition&quot;&gt;
+                                                                                    Rules of Competition
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/run/guidelines-and-procedures/policies-rules-and-regulations/code-of-conduct&quot; title=&quot;Code of Conduct&quot;&gt;
+                                                                                    Code of Conduct
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/runners/medical-guidelines&quot; title=&quot;Medical Guidelines&quot;&gt;
+                                                                                    Medical Guidelines
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/runners/security-measures&quot; title=&quot;Security Measures&quot;&gt;
+                                                                                    Security Measures
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li data-accordion-item=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-id=&quot;header_dropdown0&quot; data-dropdown-media=&quot;large+&quot; data-dropdown-onclose=&quot;desktopnav:decrease_open&quot; data-dropdown-onopen=&quot;desktopnav:increase_open&quot;&gt;
+&lt;a class=&quot;test f-nav mobile_nav@medium-__top__inner__nav__item desktop_nav@large+__item&quot; data-accordion-link=&quot;&quot; data-behavior=&quot;CurrentNav&quot; data-currentnav-regex=&quot;/tcsnycmarathon/raceweek&quot; data-dropdown-link=&quot;&quot; href=&quot;#&quot;&gt;
+                                                        Race Week
+                                                        &lt;span class=&quot;hide@large+&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;header_dropdown2&quot;&gt;
+&lt;ul class=&quot;z-2@large+ mobile_nav@medium-__top__inner__nav__list desktop_nav@large+__sub header_dropdown@large+ bg-invert@large+ dropdown_layer@large+ dropdown_layer@large+--centered&quot; data-accordion-list=&quot;&quot;&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/raceweek/travel-and-hotels&quot; title=&quot;Travel and Hotels&quot;&gt;
+                                                                                    Travel and Hotels
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;https://cloud.e.nyrrmailing.org/RNYRR-at-the-TCS-New-York-City-Marathon-Interest-Form?utm_source=tcsnycm-website&amp;amp;utm_medium=nav-bar&amp;amp;utm_campaign=RisingatTCSNYCMInterest&quot; title=&quot;Free Youth Event&quot;&gt;
+                                                                                    Free Youth Event
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li data-accordion-item=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-id=&quot;header_dropdown0&quot; data-dropdown-media=&quot;large+&quot; data-dropdown-onclose=&quot;desktopnav:decrease_open&quot; data-dropdown-onopen=&quot;desktopnav:increase_open&quot;&gt;
+&lt;a class=&quot;test f-nav mobile_nav@medium-__top__inner__nav__item desktop_nav@large+__item&quot; data-accordion-link=&quot;&quot; data-behavior=&quot;CurrentNav&quot; data-currentnav-regex=&quot;/tcsnycmarathon/race-day&quot; data-dropdown-link=&quot;&quot; href=&quot;#&quot;&gt;
+                                                        Race Day
+                                                        &lt;span class=&quot;hide@large+&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;header_dropdown2&quot;&gt;
+&lt;ul class=&quot;z-2@large+ mobile_nav@medium-__top__inner__nav__list desktop_nav@large+__sub header_dropdown@large+ bg-invert@large+ dropdown_layer@large+ dropdown_layer@large+--centered&quot; data-accordion-list=&quot;&quot;&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/race-day/the-course&quot; title=&quot;The Course&quot;&gt;
+                                                                                    The Course
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/run/guidelines-and-procedures/policies-rules-and-regulations/prohibited-items&quot; title=&quot;Prohibited Items&quot;&gt;
+                                                                                    Prohibited Items
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/race-day/health-and-safety&quot; title=&quot;Health and Safety&quot;&gt;
+                                                                                    Health and Safety
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li data-accordion-item=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-id=&quot;header_dropdown0&quot; data-dropdown-media=&quot;large+&quot; data-dropdown-onclose=&quot;desktopnav:decrease_open&quot; data-dropdown-onopen=&quot;desktopnav:increase_open&quot;&gt;
+&lt;a class=&quot;test f-nav mobile_nav@medium-__top__inner__nav__item desktop_nav@large+__item&quot; data-accordion-link=&quot;&quot; data-behavior=&quot;CurrentNav&quot; data-currentnav-regex=&quot;/tcsnycmarathon/volunteer&quot; data-dropdown-link=&quot;&quot; href=&quot;#&quot;&gt;
+                                                        Volunteer
+                                                        &lt;span class=&quot;hide@large+&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;header_dropdown2&quot;&gt;
+&lt;ul class=&quot;z-2@large+ mobile_nav@medium-__top__inner__nav__list desktop_nav@large+__sub header_dropdown@large+ bg-invert@large+ dropdown_layer@large+ dropdown_layer@large+--centered&quot; data-accordion-list=&quot;&quot;&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/volunteer&quot; title=&quot;Overview&quot;&gt;
+                                                                                    Overview
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/getinvolved/volunteer/guidelines_programs/volunteer-guidelines&quot; title=&quot;Guidelines&quot;&gt;
+                                                                                    Guidelines
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/getinvolved/volunteer/guidelines_programs/medical-volunteers&quot; title=&quot;Medical Volunteers&quot;&gt;
+                                                                                    Medical Volunteers
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li data-accordion-item=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-id=&quot;header_dropdown0&quot; data-dropdown-media=&quot;large+&quot; data-dropdown-onclose=&quot;desktopnav:decrease_open&quot; data-dropdown-onopen=&quot;desktopnav:increase_open&quot;&gt;
+&lt;a class=&quot;test f-nav mobile_nav@medium-__top__inner__nav__item desktop_nav@large+__item&quot; data-accordion-link=&quot;&quot; data-behavior=&quot;CurrentNav&quot; data-currentnav-regex=&quot;/tcsnycmarathon/results&quot; data-dropdown-link=&quot;&quot; href=&quot;#&quot;&gt;
+                                                        Results
+                                                        &lt;span class=&quot;hide@large+&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;header_dropdown2&quot;&gt;
+&lt;ul class=&quot;z-2@large+ mobile_nav@medium-__top__inner__nav__list desktop_nav@large+__sub header_dropdown@large+ bg-invert@large+ dropdown_layer@large+ dropdown_layer@large+--centered&quot; data-accordion-list=&quot;&quot;&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/results/race-results&quot; title=&quot;Race Results&quot;&gt;
+                                                                                    Race Results
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;https://www.nyrr.org/run/prize-money&quot; title=&quot;Prize Money &amp;amp; Bonus Awards&quot;&gt;
+                                                                                    Prize Money &amp;amp; Bonus Awards
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;https://results.nyrr.org/streakers-and-15-plus&quot; title=&quot;Streakers &amp;amp; 15+&quot;&gt;
+                                                                                    Streakers &amp;amp; 15+
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li data-accordion-item=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-id=&quot;header_dropdown0&quot; data-dropdown-media=&quot;large+&quot; data-dropdown-onclose=&quot;desktopnav:decrease_open&quot; data-dropdown-onopen=&quot;desktopnav:increase_open&quot;&gt;
+&lt;a class=&quot;test f-nav mobile_nav@medium-__top__inner__nav__item desktop_nav@large+__item&quot; data-accordion-link=&quot;&quot; data-behavior=&quot;CurrentNav&quot; data-currentnav-regex=&quot;/tcsnycmarathon/getinspired&quot; data-dropdown-link=&quot;&quot; href=&quot;#&quot;&gt;
+                                                        Get Inspired
+                                                        &lt;span class=&quot;hide@large+&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;header_dropdown2&quot;&gt;
+&lt;ul class=&quot;z-2@large+ mobile_nav@medium-__top__inner__nav__list desktop_nav@large+__sub header_dropdown@large+ bg-invert@large+ dropdown_layer@large+ dropdown_layer@large+--centered&quot; data-accordion-list=&quot;&quot;&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/getinspired/photos-and-stories&quot; title=&quot;Marathon Photos &amp;amp; Stories&quot;&gt;
+                                                                                    Marathon Photos &amp;amp; Stories
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/getinspired/marathonhistory&quot; title=&quot;Marathon History&quot;&gt;
+                                                                                    Marathon History
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/about/hall-of-fame&quot; title=&quot;NYRR Hall of Fame&quot;&gt;
+                                                                                    NYRR Hall of Fame
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;https://www.worldmarathonmajors.com/signup-page-new-york-road-runners?utm_campaign=NYRR+Sign-up&amp;amp;utm_medium=Referral&amp;amp;utm_source=nyrr&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;World Marathon Majors Magazine&quot;&gt;
+                                                                                    World Marathon Majors Magazine
+                                                                                    &lt;!-- start icon --&gt;&lt;svg class=&quot;icon icon--external&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--external&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon/getinspired/awmm-marathon-tours-and-travel-age-group-world-rankings&quot; title=&quot;Abbott World Marathon Majors Marathon Tours &amp;amp; Travel Age Group World Rankings&quot;&gt;
+                                                                                    Abbott World Marathon Majors Marathon Tours &amp;amp; Travel Age Group World Rankings
+                                                                                &lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;wrap_languageSelector&quot; data-accordion-item=&quot;&quot; data-behavior=&quot;Dropdown&quot; data-dropdown-id=&quot;header_dropdown4&quot; data-dropdown-media=&quot;large+&quot; data-dropdown-onclose=&quot;desktopnav:decrease_open&quot; data-dropdown-onopen=&quot;desktopnav:increase_open&quot;&gt;
+&lt;a class=&quot;f-nav mobile_nav@medium-__top__inner__nav__item desktop_nav@large+__item&quot; data-accordion-link=&quot;&quot; data-behavior=&quot;CurrentNav&quot; data-currentnav-regex=&quot;\/2[1-5].?&quot; data-dropdown-link=&quot;&quot; href=&quot;#header_dropdown4&quot;&gt;
+&lt;div class=&quot;nav_item__container languageSelector&quot;&gt;
+                English
+            &lt;/div&gt;
+&lt;span class=&quot;hide@large+&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--arrow_down&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_down&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div data-dropdown-portal=&quot;&quot; id=&quot;header_dropdown4&quot;&gt;
+&lt;ul class=&quot;z-2@large+ mobile_nav@medium-__top__inner__nav__list desktop_nav@large+__sub header_dropdown@large+ bg-invert@large+ dropdown_layer@large+ dropdown_layer@large+--centered&quot; data-accordion-list=&quot;&quot;&gt;
+&lt;li class=&quot;header_dropdown@large+__item mobile_nav@medium-__top__inner__nav__subitem&quot;&gt;
+&lt;a class=&quot;sc-lang-link languageSelector no-barba&quot; data-language-code=&quot;es&quot; href=&quot;https://www.nyrr.org/es/tcsnycmarathon/results/race-results&quot; id=&quot;spanish-clickable&quot; title=&quot;Espa&#241;ol (BETA)&quot;&gt;Espa&#241;ol (BETA)&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mobile_nav@medium-__top__inner__search desktop_header@large+__main__body__item&quot; data-desktopheadersearch-search=&quot;&quot;&gt;
+&lt;a data-desktopheadersearch-label=&quot;&quot; href=&quot;#search&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg aria-label=&quot;Search&quot; class=&quot;icon icon--search&quot; role=&quot;img&quot;&gt;
+&lt;title&gt;Search&lt;/title&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--search&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;form action=&quot;/tcsnycmarathon/searchresult?term=&quot;&gt;
+&lt;div data-autocomplete-submitonpopulate=&quot;&quot; data-autocomplete-url=&quot;/api/marathon/search/autosuggest&quot; data-behavior=&quot;Autocomplete&quot;&gt;
+&lt;input aria-label=&quot;Search&quot; autocomplete=&quot;off&quot; data-autocomplete-input=&quot;&quot; data-desktopheadersearch-input=&quot;&quot; data-mobilenav-search=&quot;&quot; id=&quot;search&quot; name=&quot;term&quot; placeholder=&quot;Search nyrr.org&quot; tabindex=&quot;-1&quot; type=&quot;text&quot;/&gt;
+&lt;!-- start autocomplete_panel --&gt;
+&lt;div class=&quot;autocomplete_panel&quot; data-autocomplete-panel=&quot;&quot; style=&quot;display: none&quot;&gt;
+&lt;div class=&quot;autocomplete_panel__results_group&quot; data-autocomplete-resultsgroup=&quot;&quot;&gt;
+&lt;template data-autocomplete-resulttemplate=&quot;&quot;&gt;
+&lt;a class=&quot;autocomplete_panel__result&quot; data-autocomplete-resulttemplate-link=&quot;&quot; href=&quot;#&quot;&gt;
+&lt;div class=&quot;autocomplete_panel__result__title&quot; data-autocomplete-resulttemplate-title=&quot;&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;autocomplete_panel__result__label label label--race&quot; data-autocomplete-resulttemplate-label=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;/template&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end autocomplete_panel --&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;!-- end autocomplete_panel --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;button class=&quot;desktop_header@large+__main__body__close hide@medium-&quot; data-desktopheadersearch-close=&quot;&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg aria-label=&quot;Close&quot; class=&quot;icon icon--close&quot; role=&quot;img&quot;&gt;
+&lt;title&gt;Close&lt;/title&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--close&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end header --&gt;
+&lt;/div&gt;
+&lt;div id=&quot;barba-wrapper&quot;&gt;
+&lt;script&gt;
+                setTimeout(function () {
+                    if ($(&#39;.barba-container&#39;).attr(&#39;data-namespace&#39;) == &#39;marathon&#39;) {
+                        $(&#39;.barba-container&#39;).addClass(&#39;marathon&#39;);
+                        $(&#39;body&#39;).addClass(&#39;marathon&#39;);
+
+                    }
+                }, 1000);
+            &lt;/script&gt;
+&lt;div class=&quot;barba-container&quot; data-namespace=&quot;marathon&quot; data-stylesheet-hrefs=&#39;[&quot;\/dist\/styles\/internal_shared.css&quot; ,&quot;\/dist\/styles\/40-marathon.css&quot;]&#39;&gt;
+&lt;main class=&quot;main&quot;&gt;
+&lt;link href=&quot;/dist/styles/40-marathon.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;article class=&quot;story_detail&quot;&gt;
+&lt;div class=&quot;&quot;&gt;
+&lt;div class=&quot;story_detail__breadcrumbs&quot;&gt;
+&lt;ol class=&quot;breadcrumbs&quot;&gt;
+&lt;li class=&quot;breadcrumbs__item&quot;&gt;
+&lt;a href=&quot;/tcsnycmarathon&quot;&gt; &lt;span class=&quot;secondary_link--header&quot;&gt; TCS New York City Marathon &lt;/span&gt; &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;breadcrumbs__item&quot;&gt;
+Results                        &lt;svg class=&quot;icon icon--arrow_right breadcrumbs__arrow&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_right&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;/li&gt;
+&lt;li class=&quot;breadcrumbs__item&quot;&gt;
+&lt;svg class=&quot;icon icon--arrow_right breadcrumbs__arrow&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--arrow_right&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+                        Race Results
+                    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;header class=&quot;story_detail__header&quot;&gt;
+&lt;h1 class=&quot;story_detail__title&quot;&gt;
+                    Race Results
+                &lt;/h1&gt;
+&lt;/header&gt;
+&lt;div class=&quot;story_detail__bounds&quot; data-sticky-bounds=&quot;&quot;&gt;
+&lt;div class=&quot;story_detail__share&quot; data-behavior=&quot;Sticky&quot; data-sticky-topnudge=&quot;100&quot;&gt;
+&lt;div class=&quot;story_detail__share_inner&quot;&gt;
+&lt;!-- start share_icon_group --&gt;
+&lt;div class=&quot;share_icon_group&quot;&gt;
+&lt;!-- start share_icon --&gt;
+&lt;a class=&quot;share_icon&quot; href=&quot;https://www.facebook.com/sharer/sharer.php?u=https://www.nyrr.org/tcsnycmarathon/results/race-results&amp;amp;t=Check out this page on NYRR.org: Race Results&quot; onclick=&quot;window.open(this.href,&#39;popup&#39;,&#39;width=600,height=600&#39;); return false;&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg aria-label=&quot;Facebook&quot; class=&quot;icon icon--facebook&quot; role=&quot;img&quot;&gt;
+&lt;title&gt;Facebook&lt;/title&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--facebook&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;!-- end share_icon --&gt;
+&lt;!-- start share_icon --&gt;
+&lt;a class=&quot;share_icon&quot; href=&quot;https://twitter.com/intent/tweet?original_referer=https://www.nyrr.org/tcsnycmarathon/results/race-results&amp;amp;ref_src=twsrc%5Etfw&amp;amp;region=twitterapi%2Ctwitter&amp;amp;tw_p=followbutton&amp;amp;text=Check out this page on NYRR.org: Race Results https://www.nyrr.org/tcsnycmarathon/results/race-results&quot; onclick=&quot;window.open(this.href,&#39;popup&#39;,&#39;width=600,height=600&#39;); return false;&quot; target=&quot;popup&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg aria-label=&quot;Twitter&quot; class=&quot;icon icon--twitter&quot; role=&quot;img&quot;&gt;
+&lt;title&gt;Twitter&lt;/title&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--twitter&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;!-- end share_icon --&gt;
+&lt;!-- start share_icon --&gt;
+&lt;a class=&quot;share_icon&quot; href=&quot;mailto:?subject=Check out this page on NYRR.org:&amp;amp;body=Check out this page on NYRR.org: https://www.nyrr.org/tcsnycmarathon/results/race-results&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg aria-label=&quot;Email&quot; class=&quot;icon icon--mail&quot; role=&quot;img&quot;&gt;
+&lt;title&gt;Email&lt;/title&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--mail&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;!-- end share_icon --&gt;
+&lt;/div&gt;
+&lt;!-- end share_icon_group --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;story_detail__main&quot; data-behavior=&quot;AnchorNavDynamic&quot;&gt;
+&lt;!-- start stories/story_detail_media --&gt;
+&lt;section class=&quot;story_detail__media story_detail__media--no_caption&quot;&gt;
+&lt;figure&gt;
+&lt;!-- start image --&gt;
+&lt;div class=&quot;image pt-67pc&quot; data-behavior=&quot;ImageRatio&quot; data-imageratio-sizes=&#39;{&quot;xsmall&quot;:[400,300],&quot;small-only+&quot;:[800,450]}&#39;&gt;
+&lt;picture&gt;
+&lt;source data-original-set=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/photogallery/2023/end-course-and-finish-line/26_nycm23_sameday_ar_070.jpg?width=400&amp;amp;height=300&amp;amp;mode=crop&quot; media=&quot;(max-width: 499px)&quot;/&gt;
+&lt;source data-original-set=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/photogallery/2023/end-course-and-finish-line/26_nycm23_sameday_ar_070.jpg?width=800&amp;amp;height=450&amp;amp;mode=crop&quot; media=&quot;(min-width: 500px)&quot;/&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/photogallery/2023/end-course-and-finish-line/26_nycm23_sameday_ar_070.jpg?width=400&amp;amp;height=300&amp;amp;mode=crop&quot; height=&quot;200&quot; width=&quot;300&quot;&gt;
+&lt;/img&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;/figure&gt;
+&lt;/section&gt;
+&lt;!-- end stories/story_detail_media --&gt;
+&lt;!-- start stories/story_detail_text --&gt;
+&lt;section class=&quot;story_detail__text story_detail__text--with_title&quot;&gt;
+&lt;h5 style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;Results Search&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers&quot;&gt;2024 Official Results&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;Top Finishers &lt;br/&gt;
+&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers#g=M&quot;&gt;Overall Men&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers#g=W&quot;&gt;Overall Women&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers#g=X&quot;&gt;Overall Non-Binary&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers#g=M&amp;amp;cc=USA&quot;&gt;U.S.A. Men&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers#g=W&amp;amp;cc=USA&quot;&gt;U.S.A. Women&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers#category=P&amp;amp;page=1&amp;amp;g=M&quot;&gt;Wheelchair Division Men&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers#category=P&amp;amp;page=1&amp;amp;g=W&quot;&gt;Wheelchair Division Women&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/finishers#category=H&amp;amp;page=1&quot;&gt;Handcycle Category&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;text-align: left;&quot;&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/customStatisticsDetails/M2024_OrJwqivV&quot;&gt;Duo Teams&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;Awards and Statistics&#160;&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://results.nyrr.org/event/M2024/runnerAwards&quot;&gt;Age-Group Awards&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/teamAwards&quot;&gt;Team Awards &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/customStatisticsDetails/M2024_XNITJHBL&quot;&gt;NYC Borough Awards&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2024/customStatisticsDetails/M2024_mxCdcjjw&quot;&gt;Mayor’s Cup Awards&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;Other Links&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;!-- li&gt;&lt;a href=&quot;https://results.nyrr.org/event/M2023/customStatisticsDetails/M2023_qMcDkHgf&quot;&gt;Post-Race Cutoff Runners&lt;/a&gt; &lt;/li --&gt;
+&lt;li&gt;&lt;a href=&quot;https://results.nyrr.org/requestCorrection?eventCode=M2024&quot;&gt;Results Questions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;!-- end stories/story_detail_text --&gt;
+&lt;!-- end stories/story_detail_text --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;link href=&quot;/bundles/css/calendar?v=UHnw6EwJzc06E51IDasCRuiw6SKuVsXWrrSi3bx6SjI1&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/link&gt;&lt;/link&gt;&lt;/main&gt;
+&lt;!-- start newsletter_tout --&gt;
+&lt;section class=&quot;newsletter_tout&quot;&gt;
+&lt;/section&gt;
+&lt;div id=&quot;footer&quot;&gt;
+&lt;!-- start footer --&gt;
+&lt;!-- start marathon/footer --&gt;
+&lt;section class=&quot;marathon_sponsor_footer&quot;&gt;
+&lt;div class=&quot;marathon_sponsor_footer__primary&quot;&gt;
+&lt;img alt=&quot;TCS Tata Consultancy Services Logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/partners/tcs-blk.svg&quot; height=&quot;160&quot; width=&quot;410&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary desktop&quot;&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__row&quot;&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/citizens.svg&quot; height=&quot;60&quot; width=&quot;140&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/mastercard.svg&quot; height=&quot;55&quot; width=&quot;90&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;New Balance Logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/marathon-footer/stacked-new-balance-logo_red_100x55.svg&quot; height=&quot;55&quot; width=&quot;100&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/united_airlines.svg&quot; height=&quot;60&quot; width=&quot;200&quot;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__row&quot;&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;Rudin Family logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/partners/rudin_family_logo_stacked_black_rgb_2025.svg&quot; height=&quot;150&quot; width=&quot;55&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/abc_7.svg&quot; height=&quot;50&quot; width=&quot;90&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/espn.svg&quot; height=&quot;35&quot; width=&quot;170&quot;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary mobile&quot;&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__row&quot;&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/citizens.svg&quot; height=&quot;60&quot; width=&quot;140&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/mastercard.svg&quot; height=&quot;55&quot; width=&quot;90&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;New Balance Logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/marathon-footer/stacked-new-balance-logo_red_100x55.svg&quot; height=&quot;55&quot; width=&quot;100&quot;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__row&quot;&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/united_airlines.svg&quot; height=&quot;60&quot; width=&quot;200&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;Rudin Family logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/partners/rudin_family_logo_stacked_black_rgb_2025.svg&quot; height=&quot;150&quot; width=&quot;55&quot;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__row&quot;&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/abc_7.svg&quot; height=&quot;50&quot; width=&quot;90&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_sponsor_footer__secondary__item&quot;&gt;
+&lt;img alt=&quot;&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/espn.svg&quot; height=&quot;35&quot; width=&quot;170&quot;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- End marathon/footer --&gt;
+&lt;section class=&quot;marathon_org_footer Test&quot;&gt;
+&lt;div class=&quot;marathon_org_footer__item&quot;&gt;
+&lt;img alt=&quot;TCS NYC Marathon Horizontal Logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/nycm_horizontallogo_ko_rgb_01302023.svg&quot; height=&quot;72&quot; width=&quot;180&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_org_footer__item&quot;&gt;
+&lt;img alt=&quot;NYRR Stacked logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/logo/nyrr_stacked.svg&quot; height=&quot;52&quot; width=&quot;130&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_org_footer__item&quot;&gt;
+&lt;img alt=&quot;Abbott&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/marathon-footer/abbott.svg&quot; height=&quot;70&quot; width=&quot;120&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_org_footer__item&quot;&gt;
+&lt;img alt=&quot;2023 World Athletics Platinum Logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/marathon-footer/wa_permits_places_road_race2023_platinum_label.svg&quot; height=&quot;70&quot; width=&quot;70&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;marathon_org_footer__item marathon_org_footer__item--long&quot;&gt;
+&lt;img alt=&quot;NYC Partners 2023&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/marathon-footer/agencylockuptcsnycm2023.png?width=*&amp;amp;height=*&quot; height=&quot;auto&quot; width=&quot;550&quot;/&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;footer class=&quot;footer bg-invert footer--marathon&quot;&gt;
+&lt;picture class=&quot;bg_img&quot;&gt;
+&lt;source data-original-set=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/map_texture_bg--small.jpg&quot; media=&quot;(max-width: 739px)&quot; srcset=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/map_texture_bg--small.jpg&quot;/&gt;
+&lt;source data-original-set=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/map_texture_bg.jpg&quot; media=&quot;(min-width: 740px)&quot; srcset=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/map_texture_bg.jpg&quot;/&gt;
+&lt;img alt=&quot;&quot; class=&quot;loaded&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/map_texture_bg.jpg&quot; data-was-processed=&quot;true&quot; src=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/map_texture_bg.jpg&quot;/&gt;
+&lt;/picture&gt;
+&lt;div class=&quot;footer__mid&quot;&gt;
+&lt;div class=&quot;footer__inner&quot;&gt;
+&lt;div class=&quot;footer__bio_col&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;img alt=&quot;NYRR&quot; class=&quot;footer__logo&quot; data-original=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/files/logo/nyrr.svg&quot;/&gt;
+&lt;!-- end icon --&gt;
+&lt;p class=&quot;footer__bio&quot;&gt;New York Road Runners&#39; vision is to build healthier lives and stronger communities through the transformative power of running
+&lt;br/&gt;
+&lt;div class=&quot;footer__seals&quot;&gt;
+&lt;a href=&quot;https://www.charitynavigator.org/index.cfm?bay=search.summary&amp;amp;orgid=13314&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;footer__logo initial loaded&quot; data-original=&quot;https://prodsitecoreecommimg.nyrr.org/nyrrsitecoreblob/nyrr/logo/2023-charity-navigator.png&quot; data-was-processed=&quot;true&quot; src=&quot;https://prodsitecoreecommimg.nyrr.org/nyrrsitecoreblob/nyrr/logo/2023-charity-navigator.png&quot; style=&quot;width: auto; max-height: auto;&quot;/&gt;&lt;/a&gt;
+&lt;a href=&quot;https://www.guidestar.org/profile/shared/d5c7fd20-67c1-4179-90aa-44f102651381&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt; &lt;img alt=&quot;&quot; class=&quot;footer__logo initial loaded&quot; data-original=&quot;https://prodsitecore.blob.core.windows.net/nyrrsitecoreblob/nyrr/logo/guidestar-seal-2023.svg&quot; data-was-processed=&quot;true&quot; src=&quot;https://prodsitecore.blob.core.windows.net/nyrrsitecoreblob/nyrr/logo/guidestar-seal-2023.svg&quot; style=&quot;width: auto; max-height: auto;&quot;/&gt;&lt;/a&gt;
+&lt;a href=&quot;https://www.councilforresponsiblesport.org/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt; &lt;img alt=&quot;&quot; class=&quot;footer__logo initial loaded&quot; data-original=&quot;https://prodsitecore.blob.core.windows.net/nyrrsitecoreblob/nyrr/logo/council-for-responsible-sport_gold-certification.jpg&quot; data-was-processed=&quot;true&quot; src=&quot;https://prodsitecore.blob.core.windows.net/nyrrsitecoreblob/nyrr/logo/council-for-responsible-sport_gold-certification.jpg&quot; style=&quot;width: auto; max-height: auto;&quot;/&gt;&lt;/a&gt;
+&lt;/div&gt; &lt;/p&gt;
+&lt;div class=&quot;footer__seals&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footer__main_nav_col&quot;&gt;
+&lt;div class=&quot;footer__main_nav&quot;&gt;
+&lt;div class=&quot;footer__address_group&quot;&gt;
+&lt;div class=&quot;footer__address_name&quot;&gt;NYRR &lt;em&gt;RUN&lt;/em&gt;CENTER&lt;/div&gt;
+&lt;div class=&quot;footer__address&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://goo.gl/maps/WnKLnjNFf2u&quot; id=&quot;link_1551930386761&quot; target=&quot;_blank&quot;&gt;320 West 57th Street&lt;br/&gt;
+New York, NY 10019&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footer__social_col&quot;&gt;
+&lt;!-- start media_icon_group --&gt;
+&lt;div class=&quot;media_icon_group&quot;&gt;
+&lt;!-- start media_icon --&gt;
+&lt;a class=&quot;media_icon media_icon--small&quot; href=&quot;https://www.facebook.com/nycmarathon/&quot; target=&quot;_blank&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;title&gt;Facebook Test&lt;/title&gt;
+&lt;img src=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/2024/fb_solid_white.svg?width=100&amp;amp;height=100&quot;&gt;
+&lt;!-- end icon --&gt;
+&lt;/img&gt;&lt;/a&gt;
+&lt;!-- end media_icon --&gt; &lt;!-- start media_icon --&gt;
+&lt;a class=&quot;media_icon media_icon--small&quot; href=&quot;https://twitter.com/nyrr&quot; target=&quot;_blank&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;title&gt;X&lt;/title&gt;
+&lt;img src=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/2024/x_solid_white.svg?width=100&amp;amp;height=100&quot;&gt;
+&lt;!-- end icon --&gt;
+&lt;/img&gt;&lt;/a&gt;
+&lt;!-- end media_icon --&gt; &lt;!-- start media_icon --&gt;
+&lt;a class=&quot;media_icon media_icon--small&quot; href=&quot;https://www.instagram.com/nycmarathon/&quot; target=&quot;_blank&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;title&gt;Instagram&lt;/title&gt;
+&lt;img src=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/2024/ig_solid_white.svg?width=100&amp;amp;height=100&quot;&gt;
+&lt;!-- end icon --&gt;
+&lt;/img&gt;&lt;/a&gt;
+&lt;!-- end media_icon --&gt; &lt;!-- start media_icon --&gt;
+&lt;a class=&quot;media_icon media_icon--small&quot; href=&quot;https://www.threads.net/@nyrr&quot; target=&quot;_blank&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;title&gt;Threads&lt;/title&gt;
+&lt;img src=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/2024/threads_solid_white.svg?width=100&amp;amp;height=100&quot;&gt;
+&lt;!-- end icon --&gt;
+&lt;/img&gt;&lt;/a&gt;
+&lt;!-- end media_icon --&gt; &lt;!-- start media_icon --&gt;
+&lt;a class=&quot;media_icon media_icon--small&quot; href=&quot;https://www.tiktok.com/@newyorkcitymarathon&quot; target=&quot;_blank&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;title&gt;TikTok&lt;/title&gt;
+&lt;img src=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/2024/ticktock_solid_white.svg?width=100&amp;amp;height=100&quot;&gt;
+&lt;!-- end icon --&gt;
+&lt;/img&gt;&lt;/a&gt;
+&lt;!-- end media_icon --&gt; &lt;!-- start media_icon --&gt;
+&lt;a class=&quot;media_icon media_icon--small&quot; href=&quot;https://www.strava.com/clubs/209437&quot; target=&quot;_blank&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;title&gt;Strava&lt;/title&gt;
+&lt;img src=&quot;https://prodsitecorehaku01-image.nyrr.org/nyrrsitecoreblob/nyrr/image/footer/2024/strava_solid_white.svg?width=100&amp;amp;height=100&quot;&gt;
+&lt;!-- end icon --&gt;
+&lt;/img&gt;&lt;/a&gt;
+&lt;!-- end media_icon --&gt; &lt;!-- start media_icon --&gt;
+&lt;/div&gt;
+&lt;!-- end media_icon_group --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- start link_garden --&gt;
+&lt;nav class=&quot;link_garden l-grid footer__link_garden hide@medium-&quot;&gt;
+&lt;div class=&quot;link_garden__col&quot;&gt;
+&lt;a class=&quot;link_garden__link How To Enter&quot; href=&quot;/tcsnycmarathon/runners/entry/2025&quot;&gt;Run in 2025&lt;/a&gt;
+&lt;a class=&quot;link_garden__link Volunteer&quot; href=&quot;/tcsnycmarathon/volunteer&quot;&gt;Volunteer&lt;/a&gt;
+&lt;a class=&quot;link_garden__link Results&quot; href=&quot;/tcsnycmarathon/results/race-results&quot;&gt;Results&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;link_garden__col&quot;&gt;
+&lt;a class=&quot;link_garden__link Get Inspired&quot; href=&quot;/tcsnycmarathon/getinspired/photos-and-stories&quot;&gt;Get Inspired&lt;/a&gt;
+&lt;a class=&quot;link_garden__link Shop&quot; href=&quot;https://www.newbalance.com/nyc-running-gear-for-men-and-women/?ecid=rd_TCSorg_eventgear_91917&quot;&gt;Shop&lt;/a&gt;
+&lt;a class=&quot;link_garden__link About&quot; href=&quot;/about&quot;&gt;About NYRR&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;link_garden__col&quot;&gt;
+&lt;a class=&quot;link_garden__link&quot; href=&quot;https://help.tcsnycmarathon.org/&quot;&gt;Help  &lt;/a&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;!-- end link_garden --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footer__aux&quot;&gt;
+&lt;div class=&quot;footer__aux_inner&quot;&gt;
+&lt;div class=&quot;footer__aux_title&quot;&gt;&#169; 2025 New York Road Runners, Inc. All rights reserved.&#160;&lt;br&gt;
+NYRR is a registered 501(c)(3) not-for-profit corporation. New York City Marathon is a registered trademark of New York Road Runners, Inc. NYRR is a registered trademark of New York Road Runners, Inc. TCS is a registered trademark of TATA CONSULTANCY SERVICES. &lt;/br&gt;&lt;/div&gt;
+&lt;nav class=&quot;footer__aux_nav&quot;&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; data-behavior=&quot;HighContrastToggle&quot; href=&quot;javascript:;&quot;&gt;
+                                    Increase Text Contrast
+                                &lt;/a&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; href=&quot;/terms-of-use&quot;&gt;Terms of Use&lt;/a&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; href=&quot;/media-center&quot;&gt;Media Center&lt;/a&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; href=&quot;javascript:;&quot;&gt;International Tour Operators&lt;/a&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; href=&quot;https://help.tcsnycmarathon.org/customer/portal/emails/new?_ga=2.92855579.709648331.1568728864-372639276.1551723671&quot;&gt;Feedback&lt;/a&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; href=&quot;https://help.tcsnycmarathon.org/&quot;&gt;Help&lt;/a&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; href=&quot;https://help.nyrr.org/s/contactsupport&quot;&gt;Contact&lt;/a&gt;
+&lt;a class=&quot;footer__aux_nav_item&quot; href=&quot;/&quot;&gt;NYRR.org&lt;/a&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;!-- end footer --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end .barba-container --&gt;
+&lt;/div&gt;
+&lt;!-- end #barba-wrapper --&gt;
+&lt;div class=&quot;shell__loading&quot; id=&quot;loading_icon&quot;&gt;
+&lt;div class=&quot;ball-pulse&quot;&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end .shell --&gt;
+&lt;div id=&quot;portal&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toast&quot; data-behavior=&quot;Toast&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;progress_loader&quot; data-behavior=&quot;ProgressLoader&quot;&gt;
+&lt;div class=&quot;ball-pulse progress_loader__icon&quot;&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress_loader__msg&quot; data-progressloader-msg=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-behavior=&quot;Overlay&quot; data-overlay-id=&quot;ajax_overlay&quot; id=&quot;ajax_overlay&quot;&gt;
+&lt;div data-overlay-portal=&quot;&quot;&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+&lt;div class=&quot;overlay__modal&quot; data-overlay-inner=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;toast&quot; data-behavior=&quot;Toast&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;prefooter&quot; onload=&quot;CheckCookie(&#39;20180727T200000Z&#39;);&quot;&gt;
+&lt;!-- start home/cookies --&gt;
+&lt;aside class=&quot;cookies bg-invert&quot; data-behavior=&quot;Closeable&quot; role=&quot;alert&quot;&gt;
+&lt;div class=&quot;cookies__inner&quot;&gt;
+&lt;p class=&quot;cookies__msg&quot;&gt;
+                    Welcome to NYRR.org. This site uses cookies. Read our &lt;a href=&quot;/privacy-policy&quot; target=&quot;&quot;&gt;Privacy Policies&lt;/a&gt;
+&lt;/p&gt;
+&lt;div class=&quot;cookies__btn&quot;&gt;
+&lt;!-- start btn --&gt;&lt;a class=&quot;btn btn--xsmall btn--secondary&quot; data-closeable-closebtn=&quot;&quot; href=&quot;javascript:void(0);&quot; onclick=&quot;AcceptCookie(&#39;20180727T200000Z&#39;);&quot;&gt;
+&lt;span class=&quot;btn__inner&quot;&gt;Accept&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- end btn --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/aside&gt;
+&lt;!-- end home/cookies --&gt;
+&lt;/div&gt;
+&lt;input id=&quot;hdnMarathonItemName&quot; type=&quot;hidden&quot; value=&quot;tcsnycmarathon&quot;&gt;
+&lt;input id=&quot;hdnMarathonItemUrl&quot; type=&quot;hidden&quot; value=&quot;/tcsnycmarathon&quot;&gt;
+&lt;input id=&quot;hdnMaleValue&quot; type=&quot;hidden&quot; value=&quot;man&quot;/&gt;
+&lt;input id=&quot;hdnFemeleValue&quot; type=&quot;hidden&quot; value=&quot;woman&quot;/&gt;
+&lt;input id=&quot;hdnBinaryValue&quot; type=&quot;hidden&quot; value=&quot;non-binary&quot;/&gt;
+&lt;input id=&quot;hdnIsGoogleAnalyticsEnabled&quot; type=&quot;hidden&quot; value=&quot;true&quot;/&gt;
+&lt;input id=&quot;hdnSolrAutoSuggestMaxCount&quot; type=&quot;hidden&quot; value=&quot;10&quot;/&gt;
+&lt;script&gt;
+        var stylesheet = loadCSS(&quot;/dist/Styles/app_async.css&quot;);
+        onloadCSS(stylesheet, function () {
+            window.asyncStylesLoaded = true;
+            if (window.domLoaded &amp;&amp; window.polyfillsLoaded) {
+                window.A17.onReady();
+            }
+        });
+    &lt;/script&gt;
+&lt;script src=&quot;/dist/Scripts/app.js?v=23.29.3_41&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; charset=&quot;utf-8&quot; src=&quot;https://platform.twitter.com/widgets.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://code.jquery.com/ui/1.11.3/jquery-ui.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.9/jquery.validate.unobtrusive.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/bundles/js/global?v=cs_n7VXWXXQUkCwB0NaThRfWHymm4w6C4oX1uRyN--c1&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+        $(function () {
+
+            var twoToneButton = document.querySelector(&#39;.accountLoad_gl&#39;);
+            var globalLoader = document.querySelector(&#39;.shell__loading&#39;);
+            function globalLoaderOpen() {
+                globalLoader.classList.add(&#39;is-visible&#39;);
+            }
+            //twoToneButton.addEventListener(&quot;click&quot;, function () {
+            //    globalLoaderOpen();
+            //});
+
+        });
+    &lt;/script&gt;
+&lt;div class=&quot;cart_notification&quot; data-behavior=&quot;CartNotification&quot; id=&quot;cart_notification&quot;&gt;
+&lt;div class=&quot;cart_notification__icon&quot;&gt;
+&lt;!-- start icon --&gt;
+&lt;svg class=&quot;icon icon--tick&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--tick&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/div&gt;
+&lt;h2 class=&quot;cart_notification__title&quot;&gt;
+            Just Added to Your Cart
+        &lt;/h2&gt;
+&lt;p class=&quot;cart_notification__item&quot; data-cartnotification-title=&quot;&quot;&gt;2017 United Airlines NYC Half&lt;/p&gt;
+&lt;div class=&quot;cart_notification__cta&quot;&gt;
+&lt;!-- start btn --&gt;
+&lt;a class=&quot;btn btn--small btn--primary&quot; href=&quot;/cartpreview&quot;&gt;&lt;span class=&quot;btn__inner&quot;&gt;Go To My Cart&lt;/span&gt;&lt;/a&gt;
+&lt;!-- end btn --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+        // HEADER SCROLL SCRIPT START
+        $(window).on(&quot;scroll&quot;, function () {
+            var scroll = $(window).scrollTop();
+            var stickyTop = $(&#39;.main&#39;).innerHeight();
+            if (scroll &gt;= stickyTop) {
+                $(&#39;.race_detail-registration_overlay_btn&#39;).css(&#39;display&#39;, &#39;none&#39;);
+            }
+            else {
+                $(&#39;.race_detail-registration_overlay_btn&#39;).css(&#39;display&#39;, &#39;block&#39;);
+            }
+        });
+        // HEADER SCROLL SCRIPT END
+    &lt;/script&gt;
+&lt;div data-behavior=&quot;Overlay &quot; data-overlay-id=&quot;global_signedout_overlay&quot;&gt;
+&lt;section data-overlay-portal=&quot;&quot; id=&quot;global_signedout_overlay&quot;&gt;
+&lt;div class=&quot;overlay authoriseOverlay&quot; id=&quot;global_signedout_overlay_inner&quot;&gt;
+&lt;div class=&quot;overlay__modal&quot; data-overlay-inner=&quot;&quot;&gt;
+&lt;header class=&quot;overlay__header&quot;&gt;
+&lt;h2 class=&quot;overlay__title&quot;&gt;Time Out&lt;/h2&gt;
+&lt;a class=&quot;overlay__close authriseclose&quot; data-overlay-close=&quot;&quot; href=&quot;javascript:;&quot;&gt;
+&lt;!-- start icon --&gt;&lt;svg class=&quot;icon icon--close&quot;&gt;
+&lt;use xlink:href=&quot;/dist/icons/icons.svg#icon--close&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;!-- end icon --&gt;
+&lt;/a&gt;
+&lt;/header&gt;
+&lt;section class=&quot;overlay__section overlay__text overlay__text--alt&quot;&gt;
+&lt;p&gt;Your session has timed out due to inactivity. &lt;/p&gt;
+&lt;/section&gt;
+&lt;footer class=&quot;overlay__section&quot;&gt;
+&lt;div class=&quot;overlay__actions&quot;&gt;
+&lt;!-- start btn --&gt;
+&lt;a class=&quot;btn btn--small btn--primary authriseclose&quot; data-behavior=&quot;OverlayLink&quot; href=&quot;javascript:;&quot;&gt;
+&lt;span class=&quot;btn__inner&quot;&gt;Ok&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- end btn --&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;div class=&quot;shell__loading&quot; id=&quot;loading_icon&quot;&gt;
+&lt;div class=&quot;ball-pulse&quot;&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;toast&quot; data-behavior=&quot;Toast&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;progress_loader&quot; data-behavior=&quot;ProgressLoader&quot;&gt;
+&lt;div class=&quot;ball-pulse progress_loader__icon&quot;&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress_loader__msg&quot; data-progressloader-msg=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-behavior=&quot;Overlay&quot; data-overlay-id=&quot;ajax_overlay&quot; id=&quot;ajax_overlay&quot;&gt;
+&lt;div data-overlay-portal=&quot;&quot;&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+&lt;div class=&quot;overlay__modal&quot; data-overlay-inner=&quot;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+        Barba.Dispatcher.on(&#39;newPageReady&#39;, function (currentStatus, oldStatus, container) {
+
+            var extInlineScripts = container.querySelectorAll(&#39;script&#39;);
+            if (extInlineScripts &amp;&amp; extInlineScripts.length &gt; 0) {
+                var alreadyAdded = false;
+                for (var i = 0; i &lt; extInlineScripts.length; i++) {
+                    const script = extInlineScripts[i];
+                    if (script.src) {
+                        var s = document.createElement(&#39;script&#39;);
+                        s.type = &#39;text/javascript&#39;;
+                        s.defer = true;
+                        s.src = script.src;
+                        var x = document.getElementsByTagName(&#39;head&#39;)[0];
+                        var extHeadScripts = x.querySelectorAll(&#39;script&#39;);
+                        if (extHeadScripts &amp;&amp; extHeadScripts.length &gt; 0) {
+                            for (var j = 0; j &lt; extHeadScripts.length; j++) {
+                                var headScript = extHeadScripts[j];
+                                if (script.src === headScript.src) {
+                                    alreadyAdded = true;
+                                    break;
+                                }
+                            }
+                        } else {
+                            alreadyAdded = false;
+                        }
+                        if (!alreadyAdded) x.appendChild(s);
+                    }
+                }
+            }
+        });
+    &lt;/script&gt;
+
+&lt;/input&gt;&lt;/input&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;!-- end foot --&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then, when we have the HTML, for the nest step, we should inspect the structure of the table 
+and try to extract the runners information. Like their name, gender, finish time, age and place.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[316]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">runners</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1"># Assume top 10 results are in a table format</span>
+<span class="n">table_rows</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;table tr&#39;</span><span class="p">)[:</span><span class="mi">11</span><span class="p">]</span>  <span class="c1"># header + 10 rows</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">table_rows</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="n">cols</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;td&#39;</span><span class="p">)</span>
+    <span class="n">runner</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="n">cols</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+        <span class="s1">&#39;Gender&#39;</span><span class="p">:</span> <span class="n">cols</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+        <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">cols</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()),</span>
+        <span class="s1">&#39;Place&#39;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">cols</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()),</span>
+        <span class="s1">&#39;Finishing Time&#39;</span><span class="p">:</span> <span class="n">cols</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="n">runners</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">runner</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[317]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convert to DataFrame</span>
+<span class="n">df_top10</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">runners</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_top10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Empty DataFrame
+Columns: []
+Index: []
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>Conclusion<a rel="noopener" class="anchor-link" href="#Conclusion">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This project demonstrates how can use Bayes&#39; Theorem combined with KDE to constract a 1-dimenson classfier with element &quot;Finish&quot;
+and the 2-dimension KDE with element &quot;Finish&quot; time and &quot;Age&quot; based on marathon. Also, this model performs very well, espically when we incorporating ages as the second feature.
+And we can see by the resulting accuracy ratios that adding more features to a database with a large number of features allows for a gradual increase in prediction accuracy. Because this can help us to exclude some data that do not meet the conditions.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To assess our approach, we compared the Bayes classifier&#39;s performance to that of K-NN
+classifier. When we using KNN, our results indicated that the number of neighbors k. 
+KNN can show us more accurate prediction than the Bayes classifier, espically using multiple features.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the furture exploration:</p>
+<ul>
+<li>We can try to add more features, for example : pace; 10K, 20K by using Bayes&#39; theorem to observe the accuracy.</li>
+<li>Also we can choose to include uncertainties such as changes in the marathon environment, or weather and climate. We can use these uncertainties to look at the ratio of males to females in the Top10.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#160;[&#160;]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2025.4.218/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+						if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+							document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+								elm.setAttribute('style', 'display: block; height: 0.5rem;');
+							});
+
+							document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+								const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+								elm.replaceWith(mrow);
+							});
+
+							window.D2L.MathJax.loadMathJax({
+								outputScale: 1.5,
+								renderLatex: true,
+								enableMML3Support: false
+							});
+						}
+					});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2025.4.218/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2025.4.218/unbundled/embeds.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script></body></html>
