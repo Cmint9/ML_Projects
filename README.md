@@ -1,6 +1,8 @@
-# ML-notes-
-This notes from Andrew Ng and my GitHub community
-# Know about what is the classification of Machine learning:
+# Machine Learning and algorithm application
+In our daily life, we come across a lot of algorithms for Machine learning. In the process of learning, I have explored algorithms such as KNN, K-means, SVM, etc. and integrated them into different projects. For example, Race with bayes, Breast Cancer Diagnosis from Kaggle, these projects not only help us to understand more about machine learning algorithms, but also help us to learn how to deal with huge databases and how to extract the information we want.
+
+Translated with DeepL.com (free version)
+# Know about the classification of Machine learning:
 AI combines sensory Intelligence (image recognition, speech recognition, Gesture recognition 图像识别、语言识别和手势识别) and recognition Intelligence( 语言理解知识和推理 language comprehension knowledge and reasoning).
 # Here are some AI intelligence branches
 #### Traditional machining learning
