@@ -37,7 +37,9 @@ Machine learning is the study of algorithms that generate models from data.
   ## project2: K-Means
   ## Project4: Race with Bayes
   ## Project6: Breast Cancer Diagnosis from Kaggle
-In project 6, the professor provided many different databases from which to choose. Therefore, in project 6, we can process the relevant data according to the machine learning algorithm that we have learned before. With the development of AI, the diagnosis and treatment of modern diseases are closer to AI. Therefore, I chose the database from Kaggle and used machine learning to process and diagnose the breast cancer data.
+  In project 6, the professor provided many different databases from which to choose. Therefore, in project 6, we can process the relevant data according to the machine learning        
+  algorithm that we have learned before. With the development of AI, the diagnosis and treatment of modern diseases are closer to AI. Therefore, I chose the database from Kaggle and 
+  used machine learning to process and diagnose the breast cancer data.
 
 
 
