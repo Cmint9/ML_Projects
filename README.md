@@ -1,5 +1,5 @@
 # Machine Learning and algorithm application
-In our daily life, we come across a lot of algorithms for Machine learning. In the process of learning, I have explored algorithms such as KNN, K-means, SVM, etc. and integrated them into different projects. For example, Race with bayes, Breast Cancer Diagnosis from Kaggle, these projects not only help us to understand more about machine learning algorithms, but also help us to learn how to deal with huge databases and how to extract the information we want.
+In our daily life, we come across a lot of algorithms for Machine learning. In the process of learning, I have explored algorithms such as KNN, K-means, SVM, etc., and integrated them into different projects. For example, Race with bayes, Breast Cancer Diagnosis from Kaggle, these projects not only help us to understand more about machine learning algorithms, but also help us to learn how to deal with huge databases and how to extract the information we want.
 
 
 # Know about the classification of Machine learning:
@@ -37,7 +37,9 @@ Machine learning is the study of algorithms that generate models from data.
   ## project2: K-Means
   ## Project4: Race with Bayes
   ## Project6: Breast Cancer Diagnosis from Kaggle
-  
+In project 6, the professor provided many different databases from which to choose. Therefore, in project 6, we can process the relevant data according to the machine learning algorithm that we have learned before. With the development of AI, the diagnosis and treatment of modern diseases are closer to AI. Therefore, I chose the database from Kaggle and used machine learning to process and diagnose the breast cancer data.
+
+
 
 · 
 
