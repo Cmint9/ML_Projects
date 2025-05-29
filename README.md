@@ -35,6 +35,7 @@ Machine learning is the study of algorithms that generate models from data.
 
   ## Project1: K-nearest- neighbor
   ## project2: K-Means
+  ## Project3: What is in name?
   ## Project4: Race with Bayes
   ## Project6: Breast Cancer Diagnosis from Kaggle
   In project 6, the professor provided many different databases from which to choose. Therefore, in project 6, we can process the relevant data according to the machine learning        
